@@ -80,14 +80,3 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 ## Notifications
 
 XanthianZ if you want to take over this repository, please contact me.
-
-## Updating the mod
-
-When an update is made to the mod, the following needs to be done to bump the version:
-
-- Update any version numbers that need to be updated
-  - in `gradle.properties`
-    - `mod_version`
-  - in `.github/workflows/build.yml`
-    - `env.VERSION`
-    - `env.RELEASE_NAME`

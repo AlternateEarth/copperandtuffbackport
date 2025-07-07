@@ -3,17 +3,17 @@ name: build
 on:
   push:
     branches: ["main"]
-    paths-ignore: ["**.md", "**/assets/modrinth/**"]
+    paths-ignore: ["**.md"]
   pull_request:
     branches: ["main"]
-    paths-ignore: ["**.md", "**/assets/modrinth/**"]
+    paths-ignore: ["**.md"]
 
 env:
   MINECRAFT_VERSION: 1.20.1
   JAVA_VERSION: 17
-  VERSION: mc1.20.1-1.2.5-fabric
+  VERSION: mc1.20.1-1.2.0-fabric
   VERSION_TYPE: release
-  RELEASE_NAME: 1.2.5 (release) for Fabric 1.20.1
+  RELEASE_NAME: 1.2.0 (release) for Fabric 1.20.1
   MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
   GITHUB_TOKEN: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
 
