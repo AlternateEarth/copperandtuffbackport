@@ -2,29 +2,28 @@
   "schemaVersion": 1,
   "id": "copperandtuffbackport",
   "version": "${version}",
-  "name": "Copper and Tuff Backport",
+  "name": "CopperandTuffBackport",
   "description": "Backport of 1.21 Copper & Tuff features",
-  "authors": ["Xanthian", "Kyle Laverty"],
+  "authors": [
+    "Xanthian"
+  ],
   "contact": {
-    "repo": "https://github.com/AlternateEarth/copperandtuffbackport"
+    "repo": "https://github.com/Chris/CopperandTuffBackport"
   },
   "license": "MIT",
-  "icon": "assets/modrinth/project_icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["xanthian.copperandtuffbackport.Initialise"],
-    "client": ["xanthian.copperandtuffbackport.ClientInit"]
+    "main": [
+      "xanthian.copperandtuffbackport.Initialise"
+    ],
+    "client": [
+      "xanthian.copperandtuffbackport.ClientInit"
+    ]
   },
   "depends": {
-    "fabricloader": ">=0.16.5",
-    "minecraft": "~1.20.1",
-    "java": ">=17",
-    "fabric-api": "*"
-  },
-  "custom": {
-    "mc-publish": {
-      "modrinth": "Cl2pHhNx",
-      "loaders": ["fabric"]
-    }
+    "fabricloader": ">=0.14.20",
+    "fabric": "*",
+    "minecraft": ">=1.20 <1.20.2",
+    "java": ">=17"
   }
 }
