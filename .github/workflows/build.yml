@@ -1,40 +1,64 @@
-# Automatically build the project and run any configured tests for every push
-# and submitted pull request. This can help catch issues that only occur on
-# certain platforms or Java versions, and provides a first line of defence
-# against bad commits.
-
 name: build
-on: [pull_request, push]
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore: ["**.md"]
+  pull_request:
+    branches: ["main"]
+    paths-ignore: ["**.md"]
+
+env:
+  MINECRAFT_VERSION: 1.20.1
+  JAVA_VERSION: 17
+  VERSION: mc1.20.1-1.2.0-fabric
+  VERSION_TYPE: release
+  RELEASE_NAME: 1.2.0 (release) for Fabric 1.20.1
+  MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
+
+permissions:
+  contents: write
 
 jobs:
   build:
-    strategy:
-      matrix:
-        # Use these Java versions
-        java: [
-          17,    # Current Java LTS & minimum supported by Minecraft
-        ]
-        # and run on both Linux and Windows
-        os: [ubuntu-22.04, windows-2022]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
-        uses: actions/checkout@v3
-      - name: validate gradle wrapper
-        uses: gradle/wrapper-validation-action@v1
-      - name: setup jdk ${{ matrix.java }}
-        uses: actions/setup-java@v3
+      - name: Check Environment Variables
+        run: env
+
+      - name: Checkout The Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Gradle Wrapper
+        uses: gradle/actions/wrapper-validation@v4
+
+      - name: Set up JDK ${{env.JAVA_VERSION}}
+        uses: actions/setup-java@v4
         with:
-          java-version: ${{ matrix.java }}
-          distribution: 'microsoft'
-      - name: make gradle wrapper executable
-        if: ${{ runner.os != 'Windows' }}
+          distribution: "temurin"
+          java-version: ${{env.JAVA_VERSION}}
+
+      - name: Make Gradle Wrapper Executable
         run: chmod +x ./gradlew
-      - name: build
-        run: ./gradlew build
-      - name: capture build artifacts
-        if: ${{ runner.os == 'Linux' && matrix.java == '17' }} # Only upload artifacts built from latest java on one OS
-        uses: actions/upload-artifact@v3
+
+      - name: Setup Gradle for optimal use
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Generate and submit dependency graph for GiHub vulnerabilities scanner
+        uses: gradle/actions/dependency-submission@v4
+
+      - name: Build with Gradle Wrapper
+        run: ./gradlew clean build
+
+      # Only publish on push to main branch
+      - name: Publish Build Artifacts to GitHub Release and Modrinth
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: Kir-Antipov/mc-publish@v3.3
         with:
-          name: Artifacts
-          path: build/libs/
+          modrinth-token: "${{env.MODRINTH_TOKEN}}"
+          github-token: "${{env.GITHUB_TOKEN}}"
+          github-tag: "v${{env.VERSION}}"
+          name: "${{env.RELEASE_NAME}}"
+          version: "${{env.VERSION}}"
+          version-type: "${{env.VERSION_TYPE}}"
