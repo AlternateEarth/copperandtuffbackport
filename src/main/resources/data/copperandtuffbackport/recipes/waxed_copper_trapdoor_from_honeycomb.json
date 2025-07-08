@@ -4,14 +4,13 @@
   "group": "waxed_copper_trapdoor",
   "ingredients": [
     {
-      "item": "minecraft:copper_trapdoor"
+      "item": "copperandtuffbackport:copper_trapdoor"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "count": 1,
-  "result": "copperandtuffbackport:waxed_copper_trapdoor"
+    "item": "copperandtuffbackport:waxed_copper_trapdoor"
   }
 }

@@ -4,14 +4,13 @@
   "group": "waxed_exposed_copper_bulb",
   "ingredients": [
     {
-      "item": "minecraft:exposed_copper_bulb"
+      "item": "copperandtuffbackport:exposed_copper_bulb"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "count": 1,
-  "result": "copperandtuffbackport:waxed_exposed_copper_bulb"
+    "item": "copperandtuffbackport:waxed_exposed_copper_bulb"
   }
 }

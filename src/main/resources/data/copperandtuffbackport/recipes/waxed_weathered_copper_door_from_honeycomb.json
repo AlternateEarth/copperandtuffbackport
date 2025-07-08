@@ -4,14 +4,13 @@
   "group": "waxed_weathered_copper_door",
   "ingredients": [
     {
-      "item": "minecraft:weathered_copper_door"
+      "item": "copperandtuffbackport:weathered_copper_door"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "count": 1,
-  "result": "copperandtuffbackport:waxed_weathered_copper_door"
+    "item": "copperandtuffbackport:waxed_weathered_copper_door"
   }
 }

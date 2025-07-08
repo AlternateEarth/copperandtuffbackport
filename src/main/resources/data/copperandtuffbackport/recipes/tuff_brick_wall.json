@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:tuff_bricks"
+      "item": "copperandtuffbackport:tuff_bricks"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 6,
-  "result": "copperandtuffbackport:tuff_brick_wall"
+    "item": "copperandtuffbackport:tuff_brick_wall"
   }
 }

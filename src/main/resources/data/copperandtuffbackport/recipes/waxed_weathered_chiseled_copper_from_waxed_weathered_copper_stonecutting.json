@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
+  "count": 4,
   "ingredient": {
     "item": "minecraft:waxed_weathered_copper"
   },
-  "result": {
-    "count": 4,
   "result": "copperandtuffbackport:waxed_weathered_chiseled_copper"
-  }
 }
