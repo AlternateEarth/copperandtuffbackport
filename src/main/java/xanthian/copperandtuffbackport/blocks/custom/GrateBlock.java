@@ -24,13 +24,13 @@ public class GrateBlock extends TransparentBlock implements Waterloggable {
 
     public GrateBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState().with(WATERLOGGED, false));
+        this.setDefaultState((BlockState) this.getDefaultState().with(WATERLOGGED, false));
     }
 
     @Nullable
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         FluidState fluidState = ctx.getWorld().getFluidState(ctx.getBlockPos());
-        return super.getPlacementState(ctx).with(WATERLOGGED, fluidState.isOf(Fluids.WATER));
+        return (BlockState) super.getPlacementState(ctx).with(WATERLOGGED, fluidState.isOf(Fluids.WATER));
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
@@ -42,7 +42,7 @@ public class GrateBlock extends TransparentBlock implements Waterloggable {
     }
 
     public FluidState getFluidState(BlockState state) {
-        return state.get(WATERLOGGED) ? Fluids.WATER.getStill(true) : super.getFluidState(state);
+        return (Boolean) state.get(WATERLOGGED) ? Fluids.WATER.getStill(true) : super.getFluidState(state);
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

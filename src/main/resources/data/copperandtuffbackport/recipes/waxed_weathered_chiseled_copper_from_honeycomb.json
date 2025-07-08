@@ -4,13 +4,14 @@
   "group": "waxed_weathered_chiseled_copper",
   "ingredients": [
     {
-      "item": "copperandtuffbackport:weathered_chiseled_copper"
+      "item": "minecraft:weathered_chiseled_copper"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "copperandtuffbackport:waxed_weathered_chiseled_copper"
+    "count": 1,
+  "result": "copperandtuffbackport:waxed_weathered_chiseled_copper"
   }
 }

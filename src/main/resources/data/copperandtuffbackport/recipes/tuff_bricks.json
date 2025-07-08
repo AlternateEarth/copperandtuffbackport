@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "S": {
-      "item": "copperandtuffbackport:polished_tuff"
+      "item": "minecraft:polished_tuff"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 4,
-    "item": "copperandtuffbackport:tuff_bricks"
+  "result": "copperandtuffbackport:tuff_bricks"
   }
 }

@@ -22,4 +22,5 @@ public record ModBlockSetTypes() {
             .buttonClickOffSound(SoundEvents.BLOCK_STONE_BUTTON_CLICK_OFF)
             .buttonClickOnSound(SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON)
             .register(new Identifier(Initialise.MOD_ID, "copper"));
+
 }

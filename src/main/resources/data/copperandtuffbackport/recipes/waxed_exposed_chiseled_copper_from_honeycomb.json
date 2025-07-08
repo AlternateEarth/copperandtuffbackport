@@ -4,13 +4,14 @@
   "group": "waxed_exposed_chiseled_copper",
   "ingredients": [
     {
-      "item": "copperandtuffbackport:exposed_chiseled_copper"
+      "item": "minecraft:exposed_chiseled_copper"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "copperandtuffbackport:waxed_exposed_chiseled_copper"
+    "count": 1,
+  "result": "copperandtuffbackport:waxed_exposed_chiseled_copper"
   }
 }

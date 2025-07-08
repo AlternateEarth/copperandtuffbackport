@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "copperandtuffbackport:tuff_brick_slab"
+      "item": "minecraft:tuff_brick_slab"
     }
   },
   "pattern": [
@@ -11,6 +11,7 @@
     "#"
   ],
   "result": {
-    "item": "copperandtuffbackport:chiseled_tuff_bricks"
+    "count": 1,
+  "result": "copperandtuffbackport:chiseled_tuff_bricks"
   }
 }

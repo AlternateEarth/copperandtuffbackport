@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "copperandtuffbackport:polished_tuff"
+      "item": "minecraft:polished_tuff"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 6,
-    "item": "copperandtuffbackport:polished_tuff_wall"
+  "result": "copperandtuffbackport:polished_tuff_wall"
   }
 }

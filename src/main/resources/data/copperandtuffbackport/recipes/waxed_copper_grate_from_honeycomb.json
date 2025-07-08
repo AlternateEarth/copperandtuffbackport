@@ -4,13 +4,14 @@
   "group": "waxed_copper_grate",
   "ingredients": [
     {
-      "item": "copperandtuffbackport:copper_grate"
+      "item": "minecraft:copper_grate"
     },
     {
       "item": "minecraft:honeycomb"
     }
   ],
   "result": {
-    "item": "copperandtuffbackport:waxed_copper_grate"
+    "count": 1,
+  "result": "copperandtuffbackport:waxed_copper_grate"
   }
 }
