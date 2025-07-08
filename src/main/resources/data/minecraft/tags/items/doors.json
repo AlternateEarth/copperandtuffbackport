@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "copperandtuffbackport:copper_door",
     "copperandtuffbackport:exposed_copper_door",

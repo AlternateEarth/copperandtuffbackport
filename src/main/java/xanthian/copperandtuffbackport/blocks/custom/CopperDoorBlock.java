@@ -2,29 +2,14 @@ package xanthian.copperandtuffbackport.blocks.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.block.enums.DoubleBlockHalf;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldAccess;
 
-public class OxidizableDoorBlock extends DoorBlock implements Oxidizable {
-    private final OxidationLevel oxidationLevel;
+public class CopperDoorBlock extends DoorBlock {
 
-    public OxidizableDoorBlock(BlockSetType type, Oxidizable.OxidationLevel oxidationLevel, Settings settings) {
+    public CopperDoorBlock(AbstractBlock.Settings settings, BlockSetType type) {
         super(settings, type);
-        this.oxidationLevel = oxidationLevel;
-    }
-
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        if (state.get(DoorBlock.HALF) == DoubleBlockHalf.LOWER) {
-            this.tickDegradation(state, world, pos, random);
-        }
-
-    }
-
-    public boolean hasRandomTicks(BlockState state) {
-        return Oxidizable.getIncreasedOxidationBlock(state.getBlock()).isPresent();
     }
 
     @Override
@@ -37,7 +22,4 @@ public class OxidizableDoorBlock extends DoorBlock implements Oxidizable {
         }
     }
 
-    public OxidationLevel getDegradationLevel() {
-        return this.oxidationLevel;
-    }
 }
