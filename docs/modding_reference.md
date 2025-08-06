@@ -4,6 +4,7 @@ This is the storage of my various modding notes for this repo.
 
 ## References
 
+- [Modding Reference - NeoForge - Tools + Armor](https://docs.neoforged.net/docs/1.20.4/items/tools/)
 - [Tags - Block](<https://minecraft.wiki/w/Block_tag_(Java_Edition)>)
 - [Tags - Item](<https://minecraft.wiki/w/Item_tag_(Java_Edition)>)
 - [Block - Chiseled and Waxed Chiseled Copper](https://minecraft.wiki/w/Chiseled_Copper)
