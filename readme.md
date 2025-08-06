@@ -65,10 +65,14 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 | Tuff Brick Slab                 | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
 | Tuff Brick Stairs               | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Tuff Brick Wall                 | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Copper Helmet                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Chestplate               | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Leggings                 | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Boots                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
 
 ## References
 
-- [Copper Blocks](https://minecraft.wiki/w/Copper)
+- [Copper Blocks and Items](https://minecraft.wiki/w/Copper)
 - [Tuff Blocks](https://minecraft.wiki/w/Tuff)
 
 ## XanthianZ's Links

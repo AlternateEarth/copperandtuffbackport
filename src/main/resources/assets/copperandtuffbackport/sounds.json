@@ -164,6 +164,17 @@
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
+  "item.copper_armor_equip": {
+    "sounds": [
+      "copperandtuffbackport:copper_armor/equip1",
+      "copperandtuffbackport:copper_armor/equip2",
+      "copperandtuffbackport:copper_armor/equip3",
+      "copperandtuffbackport:copper_armor/equip4",
+      "copperandtuffbackport:copper_armor/equip5",
+      "copperandtuffbackport:copper_armor/equip6"
+    ],
+    "subtitle": "subtitles.copperandtuffbackport.item.armor.equip_copper"
+  },
   "block.tuff_bricks.break": {
     "sounds": [
       "copperandtuffbackport:tuff_bricks/place1",

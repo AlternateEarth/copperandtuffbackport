@@ -3,6 +3,7 @@
   "subtitles.block.copper_bulb.turn_on": "Copper Bulb turns on",
   "subtitles.block.copper_trapdoor.close": "Trapdoor closes",
   "subtitles.block.copper_trapdoor.open": "Trapdoor opens",
+  "subtitles.copperandtuffbackport.item.armor.equip_copper": "Copper armor clonks",
 
   "block.copperandtuffbackport.chiseled_copper": "Chiseled Copper",
   "block.copperandtuffbackport.copper_bulb": "Copper Bulb",
@@ -51,6 +52,11 @@
   "block.copperandtuffbackport.waxed_weathered_copper_door": "Waxed Weathered Copper Door",
   "block.copperandtuffbackport.waxed_weathered_copper_grate": "Waxed Weathered Copper Grate",
   "block.copperandtuffbackport.waxed_weathered_copper_trapdoor": "Waxed Weathered Copper Trapdoor",
+
+  "item.copperandtuffbackport.copper_helmet": "Copper Helmet",
+  "item.copperandtuffbackport.copper_chestplate": "Copper Chestplate",
+  "item.copperandtuffbackport.copper_leggings": "Copper Leggings",
+  "item.copperandtuffbackport.copper_boots": "Copper Boots",
 
   "block.copperandtuffbackport.chiseled_stone_bricks": "Chiseled Stone Bricks",
   "block.copperandtuffbackport.chiseled_tuff": "Chiseled Tuff",
