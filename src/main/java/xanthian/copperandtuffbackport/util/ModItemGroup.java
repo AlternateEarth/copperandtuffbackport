@@ -16,6 +16,18 @@ public class ModItemGroup {
             content.addAfter(ModCopperItems.COPPER_HELMET, ModCopperItems.COPPER_CHESTPLATE);
             content.addAfter(ModCopperItems.COPPER_CHESTPLATE, ModCopperItems.COPPER_LEGGINGS);
             content.addAfter(ModCopperItems.COPPER_LEGGINGS, ModCopperItems.COPPER_BOOTS);
+
+            content.addAfter(Items.STONE_SWORD, ModCopperItems.COPPER_SWORD);
+            content.addAfter(Items.STONE_AXE, ModCopperItems.COPPER_AXE);
+        });
+    }
+
+    public static void addToTools() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
+            content.addAfter(Items.STONE_HOE, ModCopperItems.COPPER_SHOVEL);
+            content.addAfter(ModCopperItems.COPPER_SHOVEL, ModCopperItems.COPPER_PICKAXE);
+            content.addAfter(ModCopperItems.COPPER_PICKAXE, ModCopperItems.COPPER_AXE);
+            content.addAfter(ModCopperItems.COPPER_AXE, ModCopperItems.COPPER_HOE);
         });
     }
 
