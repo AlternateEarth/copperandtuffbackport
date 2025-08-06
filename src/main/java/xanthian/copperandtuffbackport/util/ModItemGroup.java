@@ -17,6 +17,8 @@ public class ModItemGroup {
             content.addAfter(ModCopperItems.COPPER_CHESTPLATE, ModCopperItems.COPPER_LEGGINGS);
             content.addAfter(ModCopperItems.COPPER_LEGGINGS, ModCopperItems.COPPER_BOOTS);
 
+            content.addAfter(Items.LEATHER_HORSE_ARMOR, ModCopperItems.COPPER_HORSE_ARMOR);
+
             content.addAfter(Items.STONE_SWORD, ModCopperItems.COPPER_SWORD);
             content.addAfter(Items.STONE_AXE, ModCopperItems.COPPER_AXE);
         });

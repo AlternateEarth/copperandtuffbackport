@@ -34,3 +34,4 @@ This is the storage of my various modding notes for this repo.
 - [Item - Copper Pickaxe](https://minecraft.wiki/w/Copper_Pickaxe)
 - [Item - Copper Axe](https://minecraft.wiki/w/Copper_Axe)
 - [Item - Copper Hoe](https://minecraft.wiki/w/Copper_Hoe)
+- [Item - Copper Horse Armor](https://minecraft.wiki/w/Copper_Horse_Armor)

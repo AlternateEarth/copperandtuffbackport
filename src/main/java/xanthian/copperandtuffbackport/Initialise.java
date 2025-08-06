@@ -5,6 +5,7 @@ import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 import xanthian.copperandtuffbackport.util.ModItemGroup;
+import xanthian.copperandtuffbackport.util.ModLootSpawn;
 import xanthian.copperandtuffbackport.util.ModRegistries;
 import xanthian.copperandtuffbackport.util.ModSounds;
 
@@ -24,6 +25,7 @@ public class Initialise implements ModInitializer {
         ModItemGroup.addToBuildingBlocks();
         ModItemGroup.addToRedstoneBlocks();
         ModItemGroup.addToFunctionalBlocks();
+        ModLootSpawn.registerLootSpawns();
         ModSounds.registerSounds();
         ModRegistries.registerOxidizableBlocks();
 

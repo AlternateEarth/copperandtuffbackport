@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "copperandtuffbackport:copper_helmet"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "H": {
+      "item": "copperandtuffbackport:copper_leggings"
+    }
+  },
+  "pattern": [
+    "  #",
+    "XWX",
+    "H H"
+  ],
+  "result": {
+    "count": 1,
+    "item": "copperandtuffbackport:copper_horse_armor"
+  }
+}
