@@ -4,6 +4,7 @@ This is the storage of my various modding notes for this repo.
 
 ## References
 
+- [Modding Reference - NeoForge - Tools + Armor](https://docs.neoforged.net/docs/1.20.4/items/tools/)
 - [Tags - Block](<https://minecraft.wiki/w/Block_tag_(Java_Edition)>)
 - [Tags - Item](<https://minecraft.wiki/w/Item_tag_(Java_Edition)>)
 - [Block - Chiseled and Waxed Chiseled Copper](https://minecraft.wiki/w/Chiseled_Copper)
@@ -24,3 +25,12 @@ This is the storage of my various modding notes for this repo.
 - [Block - Tuff Brick Slab](https://minecraft.wiki/w/Tuff_Brick_Slab)
 - [Block - Tuff Brick Stairs](https://minecraft.wiki/w/Tuff_Brick_Stairs)
 - [Block - Tuff Brick Wall](https://minecraft.wiki/w/Tuff_Brick_Wall)
+- [Item - Copper Helmet](https://minecraft.wiki/w/Copper_Helmet)
+- [Item - Copper Chestplate](https://minecraft.wiki/w/Copper_Chestplate)
+- [Item - Copper Leggings](https://minecraft.wiki/w/Copper_Leggings)
+- [Item - Copper Boots](https://minecraft.wiki/w/Copper_Boots)
+- [Item - Copper Sword](https://minecraft.wiki/w/Copper_Sword)
+- [Item - Copper Shovel](https://minecraft.wiki/w/Copper_Shovel)
+- [Item - Copper Pickaxe](https://minecraft.wiki/w/Copper_Pickaxe)
+- [Item - Copper Axe](https://minecraft.wiki/w/Copper_Axe)
+- [Item - Copper Hoe](https://minecraft.wiki/w/Copper_Hoe)

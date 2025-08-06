@@ -20,6 +20,7 @@ public class Initialise implements ModInitializer {
         ModTuffBlocks.registerBlocks();
 
         ModItemGroup.addToCombat();
+        ModItemGroup.addToTools();
         ModItemGroup.addToBuildingBlocks();
         ModItemGroup.addToRedstoneBlocks();
         ModItemGroup.addToFunctionalBlocks();

@@ -69,6 +69,11 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 | Copper Chestplate               | Item     | Y              | Y      | N/A        | Y            | N/A           |
 | Copper Leggings                 | Item     | Y              | Y      | N/A        | Y            | N/A           |
 | Copper Boots                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Sword                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Shovel                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Pickaxe                  | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Axe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Hoe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
 
 ## References
 
