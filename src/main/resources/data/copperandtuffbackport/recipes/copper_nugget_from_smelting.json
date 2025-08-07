@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "copperandtuffbackport:copper_pickaxe"
+    },
+    {
+      "item": "copperandtuffbackport:copper_shovel"
+    },
+    {
+      "item": "copperandtuffbackport:copper_axe"
+    },
+    {
+      "item": "copperandtuffbackport:copper_hoe"
+    },
+    {
+      "item": "copperandtuffbackport:copper_sword"
+    },
+    {
+      "item": "copperandtuffbackport:copper_helmet"
+    },
+    {
+      "item": "copperandtuffbackport:copper_chestplate"
+    },
+    {
+      "item": "copperandtuffbackport:copper_leggings"
+    },
+    {
+      "item": "copperandtuffbackport:copper_boots"
+    },
+    {
+      "item": "copperandtuffbackport:copper_horse_armor"
+    }
+  ],
+  "result": "copperandtuffbackport:copper_nugget"
+}

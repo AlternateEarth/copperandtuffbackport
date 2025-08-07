@@ -5,6 +5,7 @@ This is the storage of my various modding notes for this repo.
 ## References
 
 - [Modding Reference - NeoForge - Tools + Armor](https://docs.neoforged.net/docs/1.20.4/items/tools/)
+- [Modding Reference - Convention Tags](https://github.com/FabricMC/fabric/tree/9aeeb6cc9e07bd402755a1b0770897032848028c/fabric-convention-tags-v2/src/generated/resources/data/c/tags)
 - [Tags - Block](<https://minecraft.wiki/w/Block_tag_(Java_Edition)>)
 - [Tags - Item](<https://minecraft.wiki/w/Item_tag_(Java_Edition)>)
 - [Block - Chiseled and Waxed Chiseled Copper](https://minecraft.wiki/w/Chiseled_Copper)

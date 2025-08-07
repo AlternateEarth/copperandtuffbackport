@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "copperandtuffbackport:copper_axe"
+        "recipe": "copperandtuffbackport:copper_nugget"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "copperandtuffbackport:copper_axe"
+      "copperandtuffbackport:copper_nugget"
     ]
   }
 }

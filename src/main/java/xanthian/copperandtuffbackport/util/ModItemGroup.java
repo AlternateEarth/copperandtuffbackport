@@ -33,6 +33,12 @@ public class ModItemGroup {
         });
     }
 
+    public static void addToIngredients() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
+            content.addAfter(Items.IRON_NUGGET, ModCopperItems.COPPER_NUGGET);
+        });
+    }
+
     public static void addToBuildingBlocks() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {

@@ -34,6 +34,8 @@ public class ModCopperItems {
         public static final Item COPPER_SHOVEL = new ShovelItem(COPPER_TOOL_MATERIAL, 1.5F, PLAYER_DEFAULT_ATTACK_SPEED_INVERSE + 1F, new FabricItemSettings());
         public static final Item COPPER_HOE = new HoeItem(COPPER_TOOL_MATERIAL, -1, PLAYER_DEFAULT_ATTACK_SPEED_INVERSE + 2F, new FabricItemSettings());
 
+        public static final Item COPPER_NUGGET = new Item(new FabricItemSettings());
+
         public static void registerItems() {
                 register("copper_helmet", COPPER_HELMET);
                 register("copper_boots", COPPER_BOOTS);
@@ -47,6 +49,8 @@ public class ModCopperItems {
                 register("copper_axe", COPPER_AXE);
                 register("copper_shovel", COPPER_SHOVEL);
                 register("copper_hoe", COPPER_HOE);
+
+                register("copper_nugget", COPPER_NUGGET);
         }
 
         private static void register(String name, Item item) {
