@@ -1,13 +1,7 @@
 package xanthian.copperandtuffbackport.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.AxeItem;
-import net.minecraft.item.HoeItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -24,6 +18,8 @@ public class ModCopperItems {
         public static final Item COPPER_LEGGINGS = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
         public static final Item COPPER_CHESTPLATE = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
 
+        public static final Item COPPER_HORSE_ARMOR = new HorseArmorItem(4, "copper", new FabricItemSettings());
+
         // The type-specific attack damage bonus. 3 for swords, 1.5 for shovels, 1 for pickaxes, varying for axes and hoes.
         // This attack damage is combined with the base attack damage of the tool material.
         // Calculated Values:
@@ -38,17 +34,23 @@ public class ModCopperItems {
         public static final Item COPPER_SHOVEL = new ShovelItem(COPPER_TOOL_MATERIAL, 1.5F, PLAYER_DEFAULT_ATTACK_SPEED_INVERSE + 1F, new FabricItemSettings());
         public static final Item COPPER_HOE = new HoeItem(COPPER_TOOL_MATERIAL, -1, PLAYER_DEFAULT_ATTACK_SPEED_INVERSE + 2F, new FabricItemSettings());
 
+        public static final Item COPPER_NUGGET = new Item(new FabricItemSettings());
+
         public static void registerItems() {
                 register("copper_helmet", COPPER_HELMET);
                 register("copper_boots", COPPER_BOOTS);
                 register("copper_leggings", COPPER_LEGGINGS);
                 register("copper_chestplate", COPPER_CHESTPLATE);
 
+                register("copper_horse_armor", COPPER_HORSE_ARMOR);
+
                 register("copper_sword", COPPER_SWORD);
                 register("copper_pickaxe", COPPER_PICKAXE);
                 register("copper_axe", COPPER_AXE);
                 register("copper_shovel", COPPER_SHOVEL);
                 register("copper_hoe", COPPER_HOE);
+
+                register("copper_nugget", COPPER_NUGGET);
         }
 
         private static void register(String name, Item item) {

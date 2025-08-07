@@ -74,6 +74,8 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 | Copper Pickaxe                  | Item     | Y              | Y      | N/A        | Y            | N/A           |
 | Copper Axe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
 | Copper Hoe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Horse Armor              | Item     | Y              | Y      | Y          | Y            | N/A           |
+| Copper Nugget                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
 
 ## References
 
