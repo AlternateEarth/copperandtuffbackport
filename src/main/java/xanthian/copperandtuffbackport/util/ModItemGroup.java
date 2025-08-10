@@ -5,6 +5,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
+import xanthian.copperandtuffbackport.blocks.ModCopperTorch;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 
@@ -125,6 +126,7 @@ public class ModItemGroup {
     public static void addToFunctionalBlocks() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> {
+            content.addAfter(Blocks.SOUL_TORCH, ModCopperTorch.COPPER_TORCH);
             content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.WAXED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);

@@ -2,6 +2,7 @@ package xanthian.copperandtuffbackport;
 
 import net.fabricmc.api.ModInitializer;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
+import xanthian.copperandtuffbackport.blocks.ModCopperTorch;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 import xanthian.copperandtuffbackport.util.ModItemGroup;
@@ -18,6 +19,7 @@ public class Initialise implements ModInitializer {
 
         ModCopperItems.registerItems();
         ModCopperBlocks.registerBlocks();
+        ModCopperTorch.registerTorch();
         ModTuffBlocks.registerBlocks();
 
         ModItemGroup.addToCombat();

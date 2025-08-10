@@ -108,8 +108,6 @@ public class ModCopperBlocks {
         register("waxed_exposed_copper_bulb", WAXED_EXPOSED_COPPER_BULB);
         register("waxed_oxidized_copper_bulb", WAXED_OXIDIZED_COPPER_BULB);
         register("waxed_weathered_copper_bulb", WAXED_WEATHERED_COPPER_BULB);
-
-
     }
 
     private static void register(String name, Block block) {

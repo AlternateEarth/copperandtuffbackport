@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "copperandtuffbackport:block/copper_wall_torch"
+    },
+    "facing=north": {
+      "model": "copperandtuffbackport:block/copper_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "copperandtuffbackport:block/copper_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "copperandtuffbackport:block/copper_wall_torch",
+      "y": 180
+    }
+  }
+}
