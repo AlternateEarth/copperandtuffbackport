@@ -16,8 +16,8 @@ public class Initialise implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        ModCopperItems.registerItems();
         ModCopperBlocks.registerBlocks();
+        ModCopperItems.registerItems();
         ModTuffBlocks.registerBlocks();
 
         ModItemGroup.addToCombat();

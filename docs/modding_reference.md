@@ -2,6 +2,10 @@
 
 This is the storage of my various modding notes for this repo.
 
+## Troubleshooting
+
+- press F1 and type in "Clean the Java Language Server Workspace"
+
 ## References
 
 - [Modding Reference - NeoForge - Tools + Armor](https://docs.neoforged.net/docs/1.20.4/items/tools/)

@@ -3,19 +3,25 @@ package xanthian.copperandtuffbackport.blocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.blocks.custom.*;
+import xanthian.copperandtuffbackport.particles.ModParticles;
 import xanthian.copperandtuffbackport.util.ModBlockSetTypes;
 import xanthian.copperandtuffbackport.util.ModSounds;
 
 import static net.minecraft.block.Blocks.*;
 
 public class ModCopperBlocks {
+
+    private static final int COPPER_TORCH_LIGHT_LEVEL = 12;
 
     public static final Block CHISELED_COPPER = new OxidizableBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(COPPER_BLOCK));
     public static final Block EXPOSED_CHISELED_COPPER = new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copyOf(EXPOSED_COPPER));
@@ -61,6 +67,17 @@ public class ModCopperBlocks {
     public static final Block WAXED_WEATHERED_COPPER_BULB = new BulbBlock(FabricBlockSettings.copyOf(WEATHERED_COPPER_BULB));
     public static final Block OXIDIZED_COPPER_BULB = new OxidizableBulbBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(COPPER_BULB).mapColor(MapColor.TEAL).luminance(createLightLevelFromLitBlockState(4)));
     public static final Block WAXED_OXIDIZED_COPPER_BULB = new BulbBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_BULB));
+
+    public static final Block COPPER_TORCH = new TorchBlock(
+        Block.Settings
+            .create()
+            .noCollision()
+            .breakInstantly()
+            .luminance(state -> COPPER_TORCH_LIGHT_LEVEL)
+            .sounds(BlockSoundGroup.WOOD)
+            .pistonBehavior(PistonBehavior.DESTROY), 
+        ModParticles.COPPER_FLAME);
+    public static final Block COPPER_WALL_TORCH = new WallTorchBlock(FabricBlockSettings.copyOf(COPPER_TORCH).dropsLike(COPPER_TORCH), ModParticles.COPPER_FLAME);
 
     public static void registerBlocks() {
 
@@ -109,7 +126,13 @@ public class ModCopperBlocks {
         register("waxed_oxidized_copper_bulb", WAXED_OXIDIZED_COPPER_BULB);
         register("waxed_weathered_copper_bulb", WAXED_WEATHERED_COPPER_BULB);
 
+        registerBlockOnly("copper_torch", COPPER_TORCH);
+        registerBlockOnly("copper_wall_torch", COPPER_WALL_TORCH);
+    }
 
+    private static void registerBlockOnly(String name, Block block) {
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
+        Registry.register(Registries.BLOCK, identifier, block);
     }
 
     private static void register(String name, Block block) {
