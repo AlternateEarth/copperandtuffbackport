@@ -8,7 +8,7 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
-import xanthian.copperandtuffbackport.blocks.ModCopperTorch;
+import xanthian.copperandtuffbackport.particles.ModParticles;
 
 @Environment(EnvType.CLIENT)
 public class ClientInit implements ClientModInitializer {
@@ -16,9 +16,9 @@ public class ClientInit implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        ParticleFactoryRegistry.getInstance().register(ModCopperTorch.COPPER_FIRE_FLAME_PARTICLE, FlameParticle.Factory::new);
-        BlockRenderLayerMap.INSTANCE.putBlock(ModCopperTorch.COPPER_TORCH, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModCopperTorch.COPPER_WALL_TORCH, RenderLayer.getCutout());
+        ParticleFactoryRegistry.getInstance().register(ModParticles.COPPER_FLAME, FlameParticle.Factory::new);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModCopperBlocks.COPPER_TORCH, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModCopperBlocks.COPPER_WALL_TORCH, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModCopperBlocks.COPPER_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModCopperBlocks.COPPER_GRATE, RenderLayer.getCutout());

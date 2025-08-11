@@ -5,7 +5,10 @@
       "conditions": {
         "items": [
           {
-            "items": "copperandtuffbackport:copper_nugget"
+            "items": [
+              "copperandtuffbackport:copper_nugget"
+            ]
+
           }
         ]
       },

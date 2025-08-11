@@ -2,11 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:stick",
-    "C": "copperandtuffbackport:copper_nugget",
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "tag": "c:copper_nuggets"
+    },
     "X": [
-      "minecraft:coal",
-      "minecraft:charcoal"
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      }
     ]
   },
   "pattern": [
@@ -16,6 +24,7 @@
   ],
   "result": {
     "count": 4,
-    "id": "copperandtuffbackport:copper_torch"
-  }
+    "item": "copperandtuffbackport:copper_torch"
+  },
+  "show_notification": true
 }

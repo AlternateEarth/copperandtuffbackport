@@ -5,7 +5,9 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import xanthian.copperandtuffbackport.Initialise;
+import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 
 public class ModCopperItems {
         private static final float PLAYER_DEFAULT_ATTACK_SPEED_INVERSE = -4F;
@@ -36,6 +38,8 @@ public class ModCopperItems {
 
         public static final Item COPPER_NUGGET = new Item(new FabricItemSettings());
 
+        public static final Item COPPER_TORCH = new VerticallyAttachableBlockItem(ModCopperBlocks.COPPER_TORCH, ModCopperBlocks.COPPER_WALL_TORCH, new FabricItemSettings().fireproof(), Direction.DOWN);
+
         public static void registerItems() {
                 register("copper_helmet", COPPER_HELMET);
                 register("copper_boots", COPPER_BOOTS);
@@ -51,6 +55,8 @@ public class ModCopperItems {
                 register("copper_hoe", COPPER_HOE);
 
                 register("copper_nugget", COPPER_NUGGET);
+
+                register("copper_torch", (BlockItem)COPPER_TORCH);
         }
 
         private static void register(String name, Item item) {
