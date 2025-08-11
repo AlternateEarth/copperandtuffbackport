@@ -76,6 +76,7 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 | Copper Hoe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
 | Copper Horse Armor              | Item     | Y              | Y      | Y          | Y            | N/A           |
 | Copper Nugget                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Torch                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
 
 ## References
 

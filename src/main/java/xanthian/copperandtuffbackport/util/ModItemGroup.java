@@ -126,6 +126,14 @@ public class ModItemGroup {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> {
             content.addAfter(Blocks.SOUL_TORCH, ModCopperItems.COPPER_TORCH);
+            content.addAfter(Blocks.SOUL_LANTERN, ModCopperBlocks.COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.COPPER_LANTERN, ModCopperBlocks.EXPOSED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.EXPOSED_COPPER_LANTERN, ModCopperBlocks.WEATHERED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WEATHERED_COPPER_LANTERN, ModCopperBlocks.OXIDIZED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_LANTERN, ModCopperBlocks.WAXED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WAXED_COPPER_LANTERN, ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN, ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN, ModCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
             content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.WAXED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
