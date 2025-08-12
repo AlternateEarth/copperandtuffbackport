@@ -3,10 +3,8 @@ package xanthian.copperandtuffbackport.blocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -68,6 +66,15 @@ public class ModCopperBlocks {
     public static final Block OXIDIZED_COPPER_BULB = new OxidizableBulbBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(COPPER_BULB).mapColor(MapColor.TEAL).luminance(createLightLevelFromLitBlockState(4)));
     public static final Block WAXED_OXIDIZED_COPPER_BULB = new BulbBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_BULB));
 
+    public static final Block COPPER_LANTERN = new OxidizableLanternBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(LANTERN));
+    public static final Block WAXED_COPPER_LANTERN = new LanternBlock(FabricBlockSettings.copy(COPPER_LANTERN));
+    public static final Block EXPOSED_COPPER_LANTERN = new OxidizableLanternBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(COPPER_LANTERN));
+    public static final Block WAXED_EXPOSED_COPPER_LANTERN = new LanternBlock(FabricBlockSettings.copy(EXPOSED_COPPER_LANTERN));
+    public static final Block WEATHERED_COPPER_LANTERN = new OxidizableLanternBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(COPPER_LANTERN));
+    public static final Block WAXED_WEATHERED_COPPER_LANTERN = new LanternBlock(FabricBlockSettings.copy(WEATHERED_COPPER_LANTERN));
+    public static final Block OXIDIZED_COPPER_LANTERN = new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(COPPER_LANTERN));
+    public static final Block WAXED_OXIDIZED_COPPER_LANTERN = new LanternBlock(FabricBlockSettings.copy(OXIDIZED_COPPER_LANTERN));
+
     public static final Block COPPER_TORCH = new TorchBlock(
         Block.Settings
             .create()
@@ -125,6 +132,15 @@ public class ModCopperBlocks {
         register("waxed_exposed_copper_bulb", WAXED_EXPOSED_COPPER_BULB);
         register("waxed_oxidized_copper_bulb", WAXED_OXIDIZED_COPPER_BULB);
         register("waxed_weathered_copper_bulb", WAXED_WEATHERED_COPPER_BULB);
+
+        register("copper_lantern", COPPER_LANTERN);
+        register("exposed_copper_lantern", EXPOSED_COPPER_LANTERN);
+        register("oxidized_copper_lantern", OXIDIZED_COPPER_LANTERN);
+        register("weathered_copper_lantern", WEATHERED_COPPER_LANTERN);
+        register("waxed_copper_lantern", WAXED_COPPER_LANTERN);
+        register("waxed_exposed_copper_lantern", WAXED_EXPOSED_COPPER_LANTERN);
+        register("waxed_oxidized_copper_lantern", WAXED_OXIDIZED_COPPER_LANTERN);
+        register("waxed_weathered_copper_lantern", WAXED_WEATHERED_COPPER_LANTERN);
 
         registerBlockOnly("copper_torch", COPPER_TORCH);
         registerBlockOnly("copper_wall_torch", COPPER_WALL_TORCH);

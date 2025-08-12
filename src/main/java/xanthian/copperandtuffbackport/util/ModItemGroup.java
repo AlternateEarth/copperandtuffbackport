@@ -1,14 +1,121 @@
 package xanthian.copperandtuffbackport.util;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 
 public class ModItemGroup {
+    public static final RegistryKey<ItemGroup> BACKPORT_MOD_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(),
+            new Identifier(Initialise.MOD_ID, "copper_and_tuff_backport"));
+    public static final ItemGroup BACKPORT_MOD_ITEM_GROUP = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModCopperBlocks.CHISELED_COPPER))
+            .displayName(Text.translatable("copperandtuffbackport.identifier"))
+            .build();
+    public static void addToMod() {
+
+        Registry.register(Registries.ITEM_GROUP, BACKPORT_MOD_ITEM_GROUP_KEY, BACKPORT_MOD_ITEM_GROUP);
+
+        ItemGroupEvents.modifyEntriesEvent(BACKPORT_MOD_ITEM_GROUP_KEY).register(content -> {
+            // Tools and Weapons
+            content.add(ModCopperItems.COPPER_SWORD);
+            content.add(ModCopperItems.COPPER_AXE);
+            content.add(ModCopperItems.COPPER_HOE);
+            content.add(ModCopperItems.COPPER_SHOVEL);
+            content.add(ModCopperItems.COPPER_PICKAXE);
+
+            // Armor
+            content.add(ModCopperItems.COPPER_HELMET);
+            content.add(ModCopperItems.COPPER_CHESTPLATE);
+            content.add(ModCopperItems.COPPER_LEGGINGS);
+            content.add(ModCopperItems.COPPER_BOOTS);
+            content.add(ModCopperItems.COPPER_HORSE_ARMOR);
+
+            // Miscellaneous
+            content.add(ModCopperItems.COPPER_NUGGET);
+            content.add(ModCopperItems.COPPER_TORCH);
+            content.add(ModCopperBlocks.COPPER_LANTERN);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_LANTERN);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_LANTERN);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_LANTERN);
+            content.add(ModCopperBlocks.WAXED_COPPER_LANTERN);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+
+            // Blocks
+            content.add(ModCopperBlocks.CHISELED_COPPER);
+            content.add(ModCopperBlocks.EXPOSED_CHISELED_COPPER);
+            content.add(ModCopperBlocks.WEATHERED_CHISELED_COPPER);
+            content.add(ModCopperBlocks.OXIDIZED_CHISELED_COPPER);
+            content.add(ModCopperBlocks.WAXED_CHISELED_COPPER);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_CHISELED_COPPER);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_CHISELED_COPPER);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_CHISELED_COPPER);
+
+            content.add(ModCopperBlocks.COPPER_DOOR);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_DOOR);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_DOOR);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_DOOR);
+            content.add(ModCopperBlocks.WAXED_COPPER_DOOR);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
+
+            content.add(ModCopperBlocks.COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.WAXED_COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
+
+            content.add(ModCopperBlocks.COPPER_GRATE);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_GRATE);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_GRATE);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_GRATE);
+            content.add(ModCopperBlocks.WAXED_COPPER_GRATE);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_GRATE);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_GRATE);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_GRATE);
+
+            content.add(ModCopperBlocks.COPPER_BULB);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_BULB);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_BULB);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_BULB);
+            content.add(ModCopperBlocks.WAXED_COPPER_BULB);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+
+            content.add(ModTuffBlocks.TUFF_STAIRS);
+            content.add(ModTuffBlocks.TUFF_SLAB);
+            content.add(ModTuffBlocks.TUFF_WALL);
+            content.add(ModTuffBlocks.CHISELED_TUFF);
+            content.add(ModTuffBlocks.POLISHED_TUFF);
+            content.add(ModTuffBlocks.POLISHED_TUFF_STAIRS);
+            content.add(ModTuffBlocks.POLISHED_TUFF_SLAB);
+            content.add(ModTuffBlocks.POLISHED_TUFF_WALL);
+            content.add(ModTuffBlocks.TUFF_BRICKS);
+            content.add(ModTuffBlocks.TUFF_BRICK_STAIRS);
+            content.add(ModTuffBlocks.TUFF_BRICK_SLAB);
+            content.add(ModTuffBlocks.TUFF_BRICK_WALL);
+            content.add(ModTuffBlocks.CHISELED_TUFF_BRICKS);
+        });
+    }
 
     public static void addToCombat() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
@@ -126,6 +233,14 @@ public class ModItemGroup {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> {
             content.addAfter(Blocks.SOUL_TORCH, ModCopperItems.COPPER_TORCH);
+            content.addAfter(Blocks.SOUL_LANTERN, ModCopperBlocks.COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.COPPER_LANTERN, ModCopperBlocks.EXPOSED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.EXPOSED_COPPER_LANTERN, ModCopperBlocks.WEATHERED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WEATHERED_COPPER_LANTERN, ModCopperBlocks.OXIDIZED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_LANTERN, ModCopperBlocks.WAXED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WAXED_COPPER_LANTERN, ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN, ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN, ModCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
             content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.WAXED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);

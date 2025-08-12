@@ -20,7 +20,7 @@ public class ModCopperItems {
         public static final Item COPPER_LEGGINGS = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
         public static final Item COPPER_CHESTPLATE = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
 
-        public static final Item COPPER_HORSE_ARMOR = new HorseArmorItem(4, "copper", new FabricItemSettings());
+        public static final Item COPPER_HORSE_ARMOR = new HorseArmorItem(4, "copper", new FabricItemSettings().maxCount(1));
 
         // The type-specific attack damage bonus. 3 for swords, 1.5 for shovels, 1 for pickaxes, varying for axes and hoes.
         // This attack damage is combined with the base attack damage of the tool material.
