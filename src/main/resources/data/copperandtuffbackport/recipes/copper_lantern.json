@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "copperandtuffbackport:copper_torch"
+    },
+    "X": {
+      "item": "copperandtuffbackport:copper_nugget"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "item": "copperandtuffbackport:copper_lantern"
+  }
+}

@@ -58,6 +58,15 @@
   "block.copperandtuffbackport.copper_torch": "Copper Torch",
   "block.copperandtuffbackport.copper_wall_torch": "Copper Wall Torch",
 
+  "block.copperandtuffbackport.copper_lantern": "Copper Lantern",
+  "block.copperandtuffbackport.exposed_copper_lantern": "Exposed Copper Lantern",
+  "block.copperandtuffbackport.oxidized_copper_lantern": "Oxidized Copper Lantern",
+  "block.copperandtuffbackport.weathered_copper_lantern": "Weathered Copper Lantern",
+  "block.copperandtuffbackport.waxed_copper_lantern": "Waxed Copper Lantern",
+  "block.copperandtuffbackport.waxed_exposed_copper_lantern": "Waxed Exposed Copper Lantern",
+  "block.copperandtuffbackport.waxed_oxidized_copper_lantern": "Waxed Oxidized Copper Lantern",
+  "block.copperandtuffbackport.waxed_weathered_copper_lantern": "Waxed Weathered Copper Lantern",
+
   "item.copperandtuffbackport.copper_nugget": "Copper Nugget",
 
   "item.copperandtuffbackport.copper_helmet": "Copper Helmet",

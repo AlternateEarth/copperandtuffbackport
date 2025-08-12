@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "copperandtuffbackport:block/weathered_copper_lantern"
+    },
+    "hanging=true": {
+      "model": "copperandtuffbackport:block/weathered_copper_lantern_hanging"
+    }
+  }
+}

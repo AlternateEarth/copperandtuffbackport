@@ -20,6 +20,7 @@ public class Initialise implements ModInitializer {
         ModCopperItems.registerItems();
         ModTuffBlocks.registerBlocks();
 
+        ModItemGroup.addToMod();
         ModItemGroup.addToCombat();
         ModItemGroup.addToTools();
         ModItemGroup.addToIngredients();
