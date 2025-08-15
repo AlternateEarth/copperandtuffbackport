@@ -37,28 +37,6 @@ public class ModCopperBlocks {
     public static final Block WAXED_WEATHERED_CHISELED_COPPER = new Block(
             FabricBlockSettings.copyOf(WEATHERED_CHISELED_COPPER));
 
-    public static final Block COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
-            Oxidizable.OxidationLevel.UNAFFECTED,
-            FabricBlockSettings.create().mapColor(COPPER_BLOCK.getDefaultMapColor()).strength(3.0F, 6.0F).requiresTool()
-                    .nonOpaque().allowsSpawning(Blocks::never));
-    public static final Block WAXED_COPPER_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(COPPER_TRAPDOOR),
-            ModBlockSetTypes.COPPER);
-    public static final Block EXPOSED_COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
-            Oxidizable.OxidationLevel.EXPOSED,
-            FabricBlockSettings.copyOf(COPPER_TRAPDOOR).mapColor(EXPOSED_COPPER.getDefaultMapColor()));
-    public static final Block WAXED_EXPOSED_COPPER_TRAPDOOR = new TrapdoorBlock(
-            FabricBlockSettings.copyOf(EXPOSED_COPPER_TRAPDOOR), ModBlockSetTypes.COPPER);
-    public static final Block OXIDIZED_COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
-            Oxidizable.OxidationLevel.OXIDIZED,
-            FabricBlockSettings.copyOf(COPPER_TRAPDOOR).mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
-    public static final Block WAXED_OXIDIZED_COPPER_TRAPDOOR = new TrapdoorBlock(
-            FabricBlockSettings.copyOf(OXIDIZED_COPPER_TRAPDOOR), ModBlockSetTypes.COPPER);
-    public static final Block WEATHERED_COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
-            Oxidizable.OxidationLevel.WEATHERED,
-            FabricBlockSettings.copyOf(COPPER_TRAPDOOR).mapColor(WEATHERED_COPPER.getDefaultMapColor()));
-    public static final Block WAXED_WEATHERED_COPPER_TRAPDOOR = new TrapdoorBlock(
-            FabricBlockSettings.copyOf(WEATHERED_COPPER_TRAPDOOR), ModBlockSetTypes.COPPER);
-
     public static final Block COPPER_GRATE = new OxidizableGrateBlock(Oxidizable.OxidationLevel.UNAFFECTED,
             FabricBlockSettings.create().strength(3.0F, 6.0F).sounds(ModSounds.COPPER_GRATE).mapColor(MapColor.ORANGE)
                     .nonOpaque().requiresTool().allowsSpawning(Blocks::never).solidBlock(Blocks::never)
@@ -129,6 +107,7 @@ public class ModCopperBlocks {
     public static void registerBlocks() {
 
         ModCopperDoor.register();
+        ModCopperTrapDoor.register();
 
         register("chiseled_copper", CHISELED_COPPER);
         register("exposed_chiseled_copper", EXPOSED_CHISELED_COPPER);
@@ -138,15 +117,6 @@ public class ModCopperBlocks {
         register("waxed_exposed_chiseled_copper", WAXED_EXPOSED_CHISELED_COPPER);
         register("waxed_oxidized_chiseled_copper", WAXED_OXIDIZED_CHISELED_COPPER);
         register("waxed_weathered_chiseled_copper", WAXED_WEATHERED_CHISELED_COPPER);
-
-        register("copper_trapdoor", COPPER_TRAPDOOR);
-        register("exposed_copper_trapdoor", EXPOSED_COPPER_TRAPDOOR);
-        register("oxidized_copper_trapdoor", OXIDIZED_COPPER_TRAPDOOR);
-        register("weathered_copper_trapdoor", WEATHERED_COPPER_TRAPDOOR);
-        register("waxed_copper_trapdoor", WAXED_COPPER_TRAPDOOR);
-        register("waxed_exposed_copper_trapdoor", WAXED_EXPOSED_COPPER_TRAPDOOR);
-        register("waxed_oxidized_copper_trapdoor", WAXED_OXIDIZED_COPPER_TRAPDOOR);
-        register("waxed_weathered_copper_trapdoor", WAXED_WEATHERED_COPPER_TRAPDOOR);
 
         register("copper_grate", COPPER_GRATE);
         register("exposed_copper_grate", EXPOSED_COPPER_GRATE);
