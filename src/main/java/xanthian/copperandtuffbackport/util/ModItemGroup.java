@@ -14,8 +14,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
+import xanthian.copperandtuffbackport.blocks.ModCopperBulb;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.blocks.ModCopperDoor;
+import xanthian.copperandtuffbackport.blocks.ModCopperGrate;
 import xanthian.copperandtuffbackport.blocks.ModCopperTrapDoor;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 
@@ -34,6 +36,8 @@ public class ModItemGroup {
 
         ModCopperDoor.registerModItemGroup();
         ModCopperTrapDoor.registerModItemGroup();
+        ModCopperGrate.registerModItemGroup();
+        ModCopperBulb.registerModItemGroup();
 
         ItemGroupEvents.modifyEntriesEvent(BACKPORT_MOD_ITEM_GROUP_KEY).register(content -> {
             // Tools and Weapons
@@ -74,24 +78,8 @@ public class ModItemGroup {
 
             // Copper Door Goes Here
             // Copper Trapdoor goes here
-
-            content.add(ModCopperBlocks.COPPER_GRATE);
-            content.add(ModCopperBlocks.EXPOSED_COPPER_GRATE);
-            content.add(ModCopperBlocks.WEATHERED_COPPER_GRATE);
-            content.add(ModCopperBlocks.OXIDIZED_COPPER_GRATE);
-            content.add(ModCopperBlocks.WAXED_COPPER_GRATE);
-            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_GRATE);
-            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_GRATE);
-            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_GRATE);
-
-            content.add(ModCopperBlocks.COPPER_BULB);
-            content.add(ModCopperBlocks.EXPOSED_COPPER_BULB);
-            content.add(ModCopperBlocks.WEATHERED_COPPER_BULB);
-            content.add(ModCopperBlocks.OXIDIZED_COPPER_BULB);
-            content.add(ModCopperBlocks.WAXED_COPPER_BULB);
-            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
-            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
-            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+            // Copper grate goes here
+            // Copper bulb goes here
 
             content.add(ModTuffBlocks.TUFF_STAIRS);
             content.add(ModTuffBlocks.TUFF_SLAB);
@@ -246,12 +234,17 @@ public class ModItemGroup {
 
     public static void addToRedstoneBlocks() {
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(content -> {
-            content.addAfter(Blocks.TARGET, ModCopperBlocks.WAXED_COPPER_BULB);
-            content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
-            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
-            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB, ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
-        });
+        /*
+         * ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(content -> {
+         * content.addAfter(Blocks.TARGET, ModCopperBlocks.WAXED_COPPER_BULB);
+         * content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB,
+         * ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
+         * content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB,
+         * ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
+         * content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB,
+         * ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+         * });
+         */
     }
 
     public static void addToFunctionalBlocks() {
@@ -268,10 +261,15 @@ public class ModItemGroup {
                     ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
             content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN,
                     ModCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
-            content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.WAXED_COPPER_BULB);
-            content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
-            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
-            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB, ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+            /*
+             * content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.WAXED_COPPER_BULB);
+             * content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB,
+             * ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
+             * content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB,
+             * ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
+             * content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB,
+             * ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+             */
         });
     }
 

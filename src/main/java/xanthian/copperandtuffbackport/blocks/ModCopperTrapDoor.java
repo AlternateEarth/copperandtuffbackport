@@ -29,23 +29,23 @@ public class ModCopperTrapDoor {
 
     private static Block COPPER_TRAPDOOR;
     private static Block EXPOSED_COPPER_TRAPDOOR;
-    private static Block OXIDIZED_COPPER_TRAPDOOR;
     private static Block WEATHERED_COPPER_TRAPDOOR;
+    private static Block OXIDIZED_COPPER_TRAPDOOR;
     private static Block WAXED_COPPER_TRAPDOOR;
     private static Block WAXED_EXPOSED_COPPER_TRAPDOOR;
-    private static Block WAXED_OXIDIZED_COPPER_TRAPDOOR;
     private static Block WAXED_WEATHERED_COPPER_TRAPDOOR;
+    private static Block WAXED_OXIDIZED_COPPER_TRAPDOOR;
 
     // Register all copper trapdoor blocks and items.
     public static void register() {
         registerTrapdoor();
         registerExposedTrapdoor();
-        registerOxidizedTrapdoor();
         registerWeatheredTrapdoor();
+        registerOxidizedTrapdoor();
         registerWaxedTrapdoor();
         registerWaxedExposedTrapdoor();
-        registerWaxedOxidizedTrapdoor();
         registerWaxedWeatheredTrapdoor();
+        registerWaxedOxidizedTrapdoor();
     }
 
     // Register the copper doors as oxidizable for the Fabric system.
@@ -64,26 +64,26 @@ public class ModCopperTrapDoor {
         ItemGroupEvents.modifyEntriesEvent(ModItemGroup.BACKPORT_MOD_ITEM_GROUP_KEY).register(content -> {
             content.add(COPPER_TRAPDOOR);
             content.add(EXPOSED_COPPER_TRAPDOOR);
-            content.add(WEATHERED_COPPER_TRAPDOOR);
             content.add(OXIDIZED_COPPER_TRAPDOOR);
+            content.add(WEATHERED_COPPER_TRAPDOOR);
             content.add(WAXED_COPPER_TRAPDOOR);
             content.add(WAXED_EXPOSED_COPPER_TRAPDOOR);
-            content.add(WAXED_WEATHERED_COPPER_TRAPDOOR);
             content.add(WAXED_OXIDIZED_COPPER_TRAPDOOR);
+            content.add(WAXED_WEATHERED_COPPER_TRAPDOOR);
         });
     }
 
-    // Setup the block render layer map for the copper doors, used by the client
+    // Setup the block render layer map for the copper trapdoors, used by the client
     // init system.
     public static void setupBlockRenderLayerMap() {
         BlockRenderLayerMap.INSTANCE.putBlock(COPPER_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EXPOSED_COPPER_TRAPDOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WEATHERED_COPPER_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WAXED_COPPER_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WAXED_EXPOSED_COPPER_TRAPDOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WAXED_WEATHERED_COPPER_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
     }
 
     private static void registerTrapdoor() {
@@ -101,18 +101,18 @@ public class ModCopperTrapDoor {
         registryRegister("exposed_copper_trapdoor", EXPOSED_COPPER_TRAPDOOR);
     }
 
-    private static void registerOxidizedTrapdoor() {
-        OXIDIZED_COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
-                Oxidizable.OxidationLevel.OXIDIZED,
-                COPPER_BLOCK_SETTINGS.mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
-        registryRegister("oxidized_copper_trapdoor", OXIDIZED_COPPER_TRAPDOOR);
-    }
-
     private static void registerWeatheredTrapdoor() {
         WEATHERED_COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
                 Oxidizable.OxidationLevel.WEATHERED,
                 COPPER_BLOCK_SETTINGS.mapColor(WEATHERED_COPPER.getDefaultMapColor()));
         registryRegister("weathered_copper_trapdoor", WEATHERED_COPPER_TRAPDOOR);
+    }
+
+    private static void registerOxidizedTrapdoor() {
+        OXIDIZED_COPPER_TRAPDOOR = new OxidizableTrapdoorBlock(ModBlockSetTypes.COPPER,
+                Oxidizable.OxidationLevel.OXIDIZED,
+                COPPER_BLOCK_SETTINGS.mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
+        registryRegister("oxidized_copper_trapdoor", OXIDIZED_COPPER_TRAPDOOR);
     }
 
     private static void registerWaxedTrapdoor() {
@@ -125,14 +125,14 @@ public class ModCopperTrapDoor {
         registryRegister("waxed_exposed_copper_trapdoor", WAXED_EXPOSED_COPPER_TRAPDOOR);
     }
 
-    private static void registerWaxedOxidizedTrapdoor() {
-        WAXED_OXIDIZED_COPPER_TRAPDOOR = new TrapdoorBlock(COPPER_BLOCK_SETTINGS, ModBlockSetTypes.COPPER);
-        registryRegister("waxed_oxidized_copper_trapdoor", WAXED_OXIDIZED_COPPER_TRAPDOOR);
-    }
-
     private static void registerWaxedWeatheredTrapdoor() {
         WAXED_WEATHERED_COPPER_TRAPDOOR = new TrapdoorBlock(COPPER_BLOCK_SETTINGS, ModBlockSetTypes.COPPER);
         registryRegister("waxed_weathered_copper_trapdoor", WAXED_WEATHERED_COPPER_TRAPDOOR);
+    }
+
+    private static void registerWaxedOxidizedTrapdoor() {
+        WAXED_OXIDIZED_COPPER_TRAPDOOR = new TrapdoorBlock(COPPER_BLOCK_SETTINGS, ModBlockSetTypes.COPPER);
+        registryRegister("waxed_oxidized_copper_trapdoor", WAXED_OXIDIZED_COPPER_TRAPDOOR);
     }
 
     private static void registryRegister(String name, Block block) {

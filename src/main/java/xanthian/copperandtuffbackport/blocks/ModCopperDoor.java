@@ -30,23 +30,23 @@ public class ModCopperDoor {
 
     private static Block COPPER_DOOR;
     private static Block EXPOSED_COPPER_DOOR;
-    private static Block OXIDIZED_COPPER_DOOR;
     private static Block WEATHERED_COPPER_DOOR;
+    private static Block OXIDIZED_COPPER_DOOR;
     private static Block WAXED_COPPER_DOOR;
     private static Block WAXED_EXPOSED_COPPER_DOOR;
-    private static Block WAXED_OXIDIZED_COPPER_DOOR;
     private static Block WAXED_WEATHERED_COPPER_DOOR;
+    private static Block WAXED_OXIDIZED_COPPER_DOOR;
 
     // Register all copper door blocks and items.
     public static void register() {
         registerDoor();
         registerExposedDoor();
-        registerOxidizedDoor();
         registerWeatheredDoor();
+        registerOxidizedDoor();
         registerWaxedDoor();
         registerWaxedExposedDoor();
-        registerWaxedOxidizedDoor();
         registerWaxedWeatheredDoor();
+        registerWaxedOxidizedDoor();
     }
 
     // Register the copper doors as oxidizable for the Fabric system.
@@ -74,20 +74,17 @@ public class ModCopperDoor {
         });
     }
 
-    // Setup the block render layer map for the copper doors, used by the client init system.
+    // Setup the block render layer map for the copper doors, used by the client
+    // init system.
     public static void setupBlockRenderLayerMap() {
         BlockRenderLayerMap.INSTANCE.putBlock(COPPER_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EXPOSED_COPPER_DOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(OXIDIZED_COPPER_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WEATHERED_COPPER_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(OXIDIZED_COPPER_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WAXED_COPPER_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WAXED_EXPOSED_COPPER_DOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_OXIDIZED_COPPER_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(WAXED_WEATHERED_COPPER_DOOR, RenderLayer.getCutout());
-    }
-
-    public static void registerBuildingBlocksItemGroup() {
-
+        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_OXIDIZED_COPPER_DOOR, RenderLayer.getCutout());
     }
 
     private static void registerDoor() {
@@ -102,16 +99,16 @@ public class ModCopperDoor {
         registryRegister("exposed_copper_door", EXPOSED_COPPER_DOOR);
     }
 
-    private static void registerOxidizedDoor() {
-        OXIDIZED_COPPER_DOOR = new OxidizableDoorBlock(ModBlockSetTypes.COPPER, Oxidizable.OxidationLevel.OXIDIZED,
-                COPPER_BLOCK_SETTINGS.mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
-        registryRegister("oxidized_copper_door", OXIDIZED_COPPER_DOOR);
-    }
-
     private static void registerWeatheredDoor() {
         WEATHERED_COPPER_DOOR = new OxidizableDoorBlock(ModBlockSetTypes.COPPER, Oxidizable.OxidationLevel.WEATHERED,
                 COPPER_BLOCK_SETTINGS.mapColor(WEATHERED_COPPER.getDefaultMapColor()));
         registryRegister("weathered_copper_door", WEATHERED_COPPER_DOOR);
+    }
+
+    private static void registerOxidizedDoor() {
+        OXIDIZED_COPPER_DOOR = new OxidizableDoorBlock(ModBlockSetTypes.COPPER, Oxidizable.OxidationLevel.OXIDIZED,
+                COPPER_BLOCK_SETTINGS.mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
+        registryRegister("oxidized_copper_door", OXIDIZED_COPPER_DOOR);
     }
 
     private static void registerWaxedDoor() {
@@ -125,16 +122,16 @@ public class ModCopperDoor {
         registryRegister("waxed_exposed_copper_door", WAXED_EXPOSED_COPPER_DOOR);
     }
 
-    private static void registerWaxedOxidizedDoor() {
-        WAXED_OXIDIZED_COPPER_DOOR = new CopperDoorBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_DOOR),
-                ModBlockSetTypes.COPPER);
-        registryRegister("waxed_oxidized_copper_door", WAXED_OXIDIZED_COPPER_DOOR);
-    }
-
     private static void registerWaxedWeatheredDoor() {
         WAXED_WEATHERED_COPPER_DOOR = new CopperDoorBlock(FabricBlockSettings.copyOf(WEATHERED_COPPER_DOOR),
                 ModBlockSetTypes.COPPER);
         registryRegister("waxed_weathered_copper_door", WAXED_WEATHERED_COPPER_DOOR);
+    }
+
+    private static void registerWaxedOxidizedDoor() {
+        WAXED_OXIDIZED_COPPER_DOOR = new CopperDoorBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_DOOR),
+                ModBlockSetTypes.COPPER);
+        registryRegister("waxed_oxidized_copper_door", WAXED_OXIDIZED_COPPER_DOOR);
     }
 
     private static void registryRegister(String name, Block block) {
