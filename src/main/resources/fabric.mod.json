@@ -4,15 +4,15 @@
   "version": "${version}",
   "name": "CopperandTuffBackport",
   "description": "Backport of 1.21 Copper & Tuff features",
-  "authors": ["Xanthian"],
+  "authors": ["Xanthian", "Rhonan"],
   "contact": {
     "repo": "https://github.com/Chris/CopperandTuffBackport"
   },
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": ["xanthian.copperandtuffbackport.Initialise"],
-    "client": ["xanthian.copperandtuffbackport.ClientInit"]
+    "main": ["alternateearth.copperandtuffbackport.Initialise"],
+    "client": ["alternateearth.copperandtuffbackport.ClientInit"]
   },
   "depends": {
     "fabricloader": ">=0.14.20",
