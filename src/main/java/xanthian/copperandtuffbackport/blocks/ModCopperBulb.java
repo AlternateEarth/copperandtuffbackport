@@ -1,6 +1,5 @@
 package xanthian.copperandtuffbackport.blocks;
 
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -8,7 +7,6 @@ import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.block.*;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Oxidizable;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,15 +17,17 @@ import xanthian.copperandtuffbackport.blocks.custom.OxidizableBulbBlock;
 import xanthian.copperandtuffbackport.util.ModItemGroup;
 import xanthian.copperandtuffbackport.util.ModSounds;
 
+import static net.minecraft.block.Blocks.*;
+
 public class ModCopperBulb {
 
     private static final FabricBlockSettings COPPER_BLOCK_SETTINGS = FabricBlockSettings.create()
-            .mapColor(net.minecraft.block.Blocks.COPPER_BLOCK.getDefaultMapColor())
+            .mapColor(COPPER_BLOCK.getDefaultMapColor())
             .strength(3.0F, 6.0F)
             .sounds(ModSounds.COPPER_BULB)
             .requiresTool()
             .solidBlock(Blocks::never)
-            .luminance(net.minecraft.block.Blocks.createLightLevelFromLitBlockState(15));
+            .luminance(createLightLevelFromLitBlockState(15));
 
     private static Block COPPER_BULB;
     private static Block EXPOSED_COPPER_BULB;
@@ -78,14 +78,8 @@ public class ModCopperBulb {
     // Setup the block render layer map for the copper bulbs, used by the client
     // init system.
     public static void setupBlockRenderLayerMap() {
-        BlockRenderLayerMap.INSTANCE.putBlock(COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(EXPOSED_COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WEATHERED_COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(OXIDIZED_COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_EXPOSED_COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_WEATHERED_COPPER_BULB, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(WAXED_OXIDIZED_COPPER_BULB, RenderLayer.getCutout());
+        throw new UnsupportedOperationException(
+                "Copper bulbs do not support block render layer mapping, they have no transparent parts.");
     }
 
     private static void registerBulb() {
@@ -97,7 +91,7 @@ public class ModCopperBulb {
         EXPOSED_COPPER_BULB = new OxidizableBulbBlock(Oxidizable.OxidationLevel.EXPOSED,
                 FabricBlockSettings.copyOf(COPPER_BULB)
                         .mapColor(MapColor.TERRACOTTA_LIGHT_GRAY)
-                        .luminance(net.minecraft.block.Blocks.createLightLevelFromLitBlockState(12)));
+                        .luminance(createLightLevelFromLitBlockState(12)));
         registryRegister("exposed_copper_bulb", EXPOSED_COPPER_BULB);
     }
 
@@ -105,7 +99,7 @@ public class ModCopperBulb {
         WEATHERED_COPPER_BULB = new OxidizableBulbBlock(Oxidizable.OxidationLevel.WEATHERED,
                 FabricBlockSettings.copyOf(COPPER_BULB)
                         .mapColor(MapColor.TERRACOTTA_BROWN)
-                        .luminance(net.minecraft.block.Blocks.createLightLevelFromLitBlockState(8)));
+                        .luminance(createLightLevelFromLitBlockState(8)));
         registryRegister("weathered_copper_bulb", WEATHERED_COPPER_BULB);
     }
 
@@ -113,7 +107,7 @@ public class ModCopperBulb {
         OXIDIZED_COPPER_BULB = new OxidizableBulbBlock(Oxidizable.OxidationLevel.OXIDIZED,
                 FabricBlockSettings.copyOf(COPPER_BULB)
                         .mapColor(MapColor.TERRACOTTA_GRAY)
-                        .luminance(net.minecraft.block.Blocks.createLightLevelFromLitBlockState(4)));
+                        .luminance(createLightLevelFromLitBlockState(4)));
         registryRegister("oxidized_copper_bulb", OXIDIZED_COPPER_BULB);
     }
 
