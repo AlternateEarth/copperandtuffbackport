@@ -2,6 +2,7 @@ package xanthian.copperandtuffbackport.util;
 
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
+import xanthian.copperandtuffbackport.blocks.ModCopperDoor;
 
 public class ModRegistries {
 
@@ -12,13 +13,7 @@ public class ModRegistries {
 
     private static void registerOxidizable() {
 
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.COPPER_DOOR, ModCopperBlocks.EXPOSED_COPPER_DOOR);
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.EXPOSED_COPPER_DOOR, ModCopperBlocks.WEATHERED_COPPER_DOOR);
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.WEATHERED_COPPER_DOOR, ModCopperBlocks.OXIDIZED_COPPER_DOOR);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.COPPER_DOOR, ModCopperBlocks.WAXED_COPPER_DOOR);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.EXPOSED_COPPER_DOOR, ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.WEATHERED_COPPER_DOOR, ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.OXIDIZED_COPPER_DOOR, ModCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
+        ModCopperDoor.registerOxidizable();
 
         OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.COPPER_TRAPDOOR, ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR);
         OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR, ModCopperBlocks.WEATHERED_COPPER_TRAPDOOR);

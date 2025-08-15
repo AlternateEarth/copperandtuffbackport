@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
+import xanthian.copperandtuffbackport.blocks.ModCopperDoor;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 
 public class ModItemGroup {
@@ -27,6 +28,8 @@ public class ModItemGroup {
     public static void addToMod() {
 
         Registry.register(Registries.ITEM_GROUP, BACKPORT_MOD_ITEM_GROUP_KEY, BACKPORT_MOD_ITEM_GROUP);
+
+        ModCopperDoor.registerModItemGroup();
 
         ItemGroupEvents.modifyEntriesEvent(BACKPORT_MOD_ITEM_GROUP_KEY).register(content -> {
             // Tools and Weapons
@@ -65,14 +68,7 @@ public class ModItemGroup {
             content.add(ModCopperBlocks.WAXED_WEATHERED_CHISELED_COPPER);
             content.add(ModCopperBlocks.WAXED_OXIDIZED_CHISELED_COPPER);
 
-            content.add(ModCopperBlocks.COPPER_DOOR);
-            content.add(ModCopperBlocks.EXPOSED_COPPER_DOOR);
-            content.add(ModCopperBlocks.WEATHERED_COPPER_DOOR);
-            content.add(ModCopperBlocks.OXIDIZED_COPPER_DOOR);
-            content.add(ModCopperBlocks.WAXED_COPPER_DOOR);
-            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
-            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
-            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
+            // Copper Door Goes Here
 
             content.add(ModCopperBlocks.COPPER_TRAPDOOR);
             content.add(ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR);
