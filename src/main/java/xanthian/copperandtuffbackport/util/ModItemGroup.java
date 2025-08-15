@@ -13,13 +13,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import xanthian.copperandtuffbackport.Initialise;
-import xanthian.copperandtuffbackport.blocks.ModChiseledCopper;
-import xanthian.copperandtuffbackport.blocks.ModCopperBulb;
-import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
-import xanthian.copperandtuffbackport.blocks.ModCopperDoor;
-import xanthian.copperandtuffbackport.blocks.ModCopperGrate;
-import xanthian.copperandtuffbackport.blocks.ModCopperLantern;
-import xanthian.copperandtuffbackport.blocks.ModCopperTrapDoor;
+import xanthian.copperandtuffbackport.blocks.*;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
 
 public class ModItemGroup {
@@ -37,6 +31,7 @@ public class ModItemGroup {
         Registry.register(Registries.ITEM_GROUP, BACKPORT_MOD_ITEM_GROUP_KEY, BACKPORT_MOD_ITEM_GROUP);
 
         // Miscellaneous
+        ModCopperTorch.registerModItemGroup();
         ModCopperLantern.registerModItemGroup();
 
         // Blocks
@@ -63,8 +58,7 @@ public class ModItemGroup {
 
             // Miscellaneous
             content.add(ModCopperItems.COPPER_NUGGET);
-            content.add(ModCopperItems.COPPER_TORCH);
-
+            // Copper torch goes here
             // Copper Lanter goes here
 
             // Blocks

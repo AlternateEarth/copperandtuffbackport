@@ -1,6 +1,7 @@
 package xanthian.copperandtuffbackport.blocks;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock.Settings;
@@ -9,10 +10,14 @@ import net.minecraft.block.TorchBlock;
 import net.minecraft.block.WallTorchBlock;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.particles.ModParticles;
 import xanthian.copperandtuffbackport.util.ModItemGroup;
@@ -28,13 +33,15 @@ public class ModCopperTorch {
             .sounds(BlockSoundGroup.WOOD)
             .pistonBehavior(PistonBehavior.DESTROY);
 
-    public static Block COPPER_TORCH;
-    public static Block COPPER_WALL_TORCH;
+    private static Block COPPER_TORCH;
+    private static Block COPPER_WALL_TORCH;
+    private static Item COPPER_TORCH_ITEM;
 
     // Register all copper torch blocks and items.
     public static void register() {
         registerTorch();
         registerWallTorch();
+        registerTorchItem();
     }
 
     // Register the copper torch as oxidizable for the Fabric system.
@@ -45,7 +52,7 @@ public class ModCopperTorch {
     // Register the copper torch in the mod's item group.
     public static void registerModItemGroup() {
         ItemGroupEvents.modifyEntriesEvent(ModItemGroup.BACKPORT_MOD_ITEM_GROUP_KEY).register(content -> {
-            content.add(COPPER_TORCH);
+            content.add(COPPER_TORCH_ITEM);
         });
     }
 
@@ -67,8 +74,22 @@ public class ModCopperTorch {
         registryRegister("copper_wall_torch", COPPER_WALL_TORCH);
     }
 
+    private static void registerTorchItem() {
+        COPPER_TORCH_ITEM = new VerticallyAttachableBlockItem(
+                COPPER_TORCH,
+                COPPER_WALL_TORCH,
+                new FabricItemSettings().fireproof(),
+                Direction.DOWN);
+        registryRegisterItem("copper_torch", (BlockItem) COPPER_TORCH_ITEM);
+    }
+
     private static void registryRegister(String name, Block block) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         Registry.register(Registries.BLOCK, identifier, block);
+    }
+
+    private static void registryRegisterItem(String name, Item item) {
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
+        Registry.register(Registries.ITEM, identifier, item);
     }
 }
