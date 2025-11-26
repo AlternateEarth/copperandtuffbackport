@@ -48,7 +48,10 @@ public final class Initialise implements ModInitializer {
         ModCopperLantern.register();
         ModCopperTorch.register();
         ModCopperItems.registerItems();
-        ModTuffBlocks.registerBlocks();
+        ModTuffBlocks.register();
+        ModChiseledTuff.register();
+        ModPolishedTuff.register();
+        ModTuffBrick.register();
     }
 
     // Setup the item groups

@@ -41,6 +41,11 @@ public class ModItemGroup {
         ModCopperGrate.registerModItemGroup();
         ModCopperBulb.registerModItemGroup();
 
+        ModTuffBlocks.registerModItemGroup();
+        ModChiseledTuff.registerModItemGroup();
+        ModPolishedTuff.registerModItemGroup();
+        ModTuffBrick.registerModItemGroup();
+
         ItemGroupEvents.modifyEntriesEvent(BACKPORT_MOD_ITEM_GROUP_KEY).register(content -> {
             // Tools and Weapons
             content.add(ModCopperItems.COPPER_SWORD);
@@ -68,19 +73,11 @@ public class ModItemGroup {
             // Copper grate goes here
             // Copper bulb goes here
 
-            content.add(ModTuffBlocks.TUFF_STAIRS);
-            content.add(ModTuffBlocks.TUFF_SLAB);
-            content.add(ModTuffBlocks.TUFF_WALL);
-            content.add(ModTuffBlocks.CHISELED_TUFF);
-            content.add(ModTuffBlocks.POLISHED_TUFF);
-            content.add(ModTuffBlocks.POLISHED_TUFF_STAIRS);
-            content.add(ModTuffBlocks.POLISHED_TUFF_SLAB);
-            content.add(ModTuffBlocks.POLISHED_TUFF_WALL);
-            content.add(ModTuffBlocks.TUFF_BRICKS);
-            content.add(ModTuffBlocks.TUFF_BRICK_STAIRS);
-            content.add(ModTuffBlocks.TUFF_BRICK_SLAB);
-            content.add(ModTuffBlocks.TUFF_BRICK_WALL);
-            content.add(ModTuffBlocks.CHISELED_TUFF_BRICKS);
+            // Tuff blocks go here
+            // Chiseled Tuff Goes here
+            // Polished Tuff goes here
+            // Tuff Bricks go here
+
         });
     }
 
@@ -200,21 +197,29 @@ public class ModItemGroup {
              * ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
              * content.addAfter(ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR,
              * ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+             * 
+             * content.addAfter(Blocks.REINFORCED_DEEPSLATE, Blocks.TUFF);
+             * content.addAfter(Blocks.TUFF, ModTuffBlocks.TUFF_STAIRS);
+             * content.addAfter(ModTuffBlocks.TUFF_STAIRS, ModTuffBlocks.TUFF_SLAB);
+             * content.addAfter(ModTuffBlocks.TUFF_SLAB, ModTuffBlocks.TUFF_WALL);
+             * content.addAfter(ModTuffBlocks.TUFF_WALL, ModTuffBlocks.CHISELED_TUFF);
+             * content.addAfter(ModTuffBlocks.CHISELED_TUFF, ModTuffBlocks.POLISHED_TUFF);
+             * content.addAfter(ModTuffBlocks.POLISHED_TUFF,
+             * ModTuffBlocks.POLISHED_TUFF_STAIRS);
+             * content.addAfter(ModTuffBlocks.POLISHED_TUFF_STAIRS,
+             * ModTuffBlocks.POLISHED_TUFF_SLAB);
+             * content.addAfter(ModTuffBlocks.POLISHED_TUFF_SLAB,
+             * ModTuffBlocks.POLISHED_TUFF_WALL);
+             * content.addAfter(ModTuffBlocks.POLISHED_TUFF_WALL,
+             * ModTuffBlocks.TUFF_BRICKS);
+             * content.addAfter(ModTuffBlocks.TUFF_BRICKS, ModTuffBlocks.TUFF_BRICK_STAIRS);
+             * content.addAfter(ModTuffBlocks.TUFF_BRICK_STAIRS,
+             * ModTuffBlocks.TUFF_BRICK_SLAB);
+             * content.addAfter(ModTuffBlocks.TUFF_BRICK_SLAB,
+             * ModTuffBlocks.TUFF_BRICK_WALL);
+             * content.addAfter(ModTuffBlocks.TUFF_BRICK_WALL,
+             * ModTuffBlocks.CHISELED_TUFF_BRICKS);
              */
-            content.addAfter(Blocks.REINFORCED_DEEPSLATE, Blocks.TUFF);
-            content.addAfter(Blocks.TUFF, ModTuffBlocks.TUFF_STAIRS);
-            content.addAfter(ModTuffBlocks.TUFF_STAIRS, ModTuffBlocks.TUFF_SLAB);
-            content.addAfter(ModTuffBlocks.TUFF_SLAB, ModTuffBlocks.TUFF_WALL);
-            content.addAfter(ModTuffBlocks.TUFF_WALL, ModTuffBlocks.CHISELED_TUFF);
-            content.addAfter(ModTuffBlocks.CHISELED_TUFF, ModTuffBlocks.POLISHED_TUFF);
-            content.addAfter(ModTuffBlocks.POLISHED_TUFF, ModTuffBlocks.POLISHED_TUFF_STAIRS);
-            content.addAfter(ModTuffBlocks.POLISHED_TUFF_STAIRS, ModTuffBlocks.POLISHED_TUFF_SLAB);
-            content.addAfter(ModTuffBlocks.POLISHED_TUFF_SLAB, ModTuffBlocks.POLISHED_TUFF_WALL);
-            content.addAfter(ModTuffBlocks.POLISHED_TUFF_WALL, ModTuffBlocks.TUFF_BRICKS);
-            content.addAfter(ModTuffBlocks.TUFF_BRICKS, ModTuffBlocks.TUFF_BRICK_STAIRS);
-            content.addAfter(ModTuffBlocks.TUFF_BRICK_STAIRS, ModTuffBlocks.TUFF_BRICK_SLAB);
-            content.addAfter(ModTuffBlocks.TUFF_BRICK_SLAB, ModTuffBlocks.TUFF_BRICK_WALL);
-            content.addAfter(ModTuffBlocks.TUFF_BRICK_WALL, ModTuffBlocks.CHISELED_TUFF_BRICKS);
 
         });
     }
