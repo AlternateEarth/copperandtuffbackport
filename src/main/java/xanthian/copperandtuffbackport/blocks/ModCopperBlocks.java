@@ -75,6 +75,15 @@ public class ModCopperBlocks {
     public static final Block OXIDIZED_COPPER_LANTERN = new OxidizableLanternBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(COPPER_LANTERN));
     public static final Block WAXED_OXIDIZED_COPPER_LANTERN = new LanternBlock(FabricBlockSettings.copy(OXIDIZED_COPPER_LANTERN));
 
+    public static final Block COPPER_CHAIN = new OxidizableChainBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(CHAIN));
+    public static final Block WAXED_COPPER_CHAIN = new ChainBlock(FabricBlockSettings.copyOf(COPPER_CHAIN));
+    public static final Block EXPOSED_COPPER_CHAIN = new OxidizableChainBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copyOf(COPPER_CHAIN).mapColor(EXPOSED_COPPER.getDefaultMapColor()));
+    public static final Block WAXED_EXPOSED_COPPER_CHAIN = new ChainBlock(FabricBlockSettings.copyOf(EXPOSED_COPPER_CHAIN));
+    public static final Block WEATHERED_COPPER_CHAIN = new OxidizableChainBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copyOf(COPPER_CHAIN).mapColor(WEATHERED_COPPER.getDefaultMapColor()));
+    public static final Block WAXED_WEATHERED_COPPER_CHAIN = new ChainBlock(FabricBlockSettings.copyOf(WEATHERED_COPPER_CHAIN));
+    public static final Block OXIDIZED_COPPER_CHAIN = new OxidizableChainBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(COPPER_CHAIN).mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
+    public static final Block WAXED_OXIDIZED_COPPER_CHAIN = new ChainBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_CHAIN));
+
     public static final Block COPPER_TORCH = new TorchBlock(
         Block.Settings
             .create()
@@ -141,6 +150,15 @@ public class ModCopperBlocks {
         register("waxed_exposed_copper_lantern", WAXED_EXPOSED_COPPER_LANTERN);
         register("waxed_oxidized_copper_lantern", WAXED_OXIDIZED_COPPER_LANTERN);
         register("waxed_weathered_copper_lantern", WAXED_WEATHERED_COPPER_LANTERN);
+
+        register("copper_chain", COPPER_CHAIN);
+        register("exposed_copper_chain", EXPOSED_COPPER_CHAIN);
+        register("oxidized_copper_chain", OXIDIZED_COPPER_CHAIN);
+        register("weathered_copper_chain", WEATHERED_COPPER_CHAIN);
+        register("waxed_copper_chain", WAXED_COPPER_CHAIN);
+        register("waxed_exposed_copper_chain", WAXED_EXPOSED_COPPER_CHAIN);
+        register("waxed_oxidized_copper_chain", WAXED_OXIDIZED_COPPER_CHAIN);
+        register("waxed_weathered_copper_chain", WAXED_WEATHERED_COPPER_CHAIN);
 
         registerBlockOnly("copper_torch", COPPER_TORCH);
         registerBlockOnly("copper_wall_torch", COPPER_WALL_TORCH);

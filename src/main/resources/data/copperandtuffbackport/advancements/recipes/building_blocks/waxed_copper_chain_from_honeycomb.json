@@ -1,14 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copper_nugget": {
+    "has_copper_chain": {
       "conditions": {
         "items": [
           {
             "items": [
-              "#c:copper_nuggets"
+              "copperandtuffbackport:copper_chain"
             ]
-
           }
         ]
       },
@@ -16,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "copperandtuffbackport:copper_torch"
+        "recipe": "copperandtuffbackport:waxed_copper_chain_from_honeycomb"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -24,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_copper_nugget"
+      "has_copper_chain"
     ]
   ],
   "rewards": {
     "recipes": [
-      "copperandtuffbackport:copper_torch"
+      "copperandtuffbackport:waxed_copper_chain_from_honeycomb"
     ]
   }
 }

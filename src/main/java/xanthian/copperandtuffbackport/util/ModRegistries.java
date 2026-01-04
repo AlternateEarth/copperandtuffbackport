@@ -59,5 +59,13 @@ public class ModRegistries {
         OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.EXPOSED_COPPER_LANTERN, ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
         OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.WEATHERED_COPPER_LANTERN, ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
         OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.OXIDIZED_COPPER_LANTERN, ModCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.COPPER_CHAIN, ModCopperBlocks.EXPOSED_COPPER_CHAIN);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.EXPOSED_COPPER_CHAIN, ModCopperBlocks.WEATHERED_COPPER_CHAIN);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModCopperBlocks.WEATHERED_COPPER_CHAIN, ModCopperBlocks.OXIDIZED_COPPER_CHAIN);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.COPPER_CHAIN, ModCopperBlocks.WAXED_COPPER_CHAIN);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.EXPOSED_COPPER_CHAIN, ModCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.WEATHERED_COPPER_CHAIN, ModCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModCopperBlocks.OXIDIZED_COPPER_CHAIN, ModCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
     }
 }

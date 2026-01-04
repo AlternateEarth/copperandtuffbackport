@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "copperandtuffbackport:copper_chain",
+    "copperandtuffbackport:exposed_copper_chain",
+    "copperandtuffbackport:weathered_copper_chain",
+    "copperandtuffbackport:oxidized_copper_chain",
+    "copperandtuffbackport:waxed_copper_chain",
+    "copperandtuffbackport:waxed_exposed_copper_chain",
+    "copperandtuffbackport:waxed_weathered_copper_chain",
+    "copperandtuffbackport:waxed_oxidized_copper_chain"
+  ]
+}

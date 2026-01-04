@@ -101,6 +101,15 @@ public class ModItemGroup {
             content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
             content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
 
+            content.add(ModCopperBlocks.COPPER_CHAIN);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_CHAIN);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_CHAIN);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_CHAIN);
+            content.add(ModCopperBlocks.WAXED_COPPER_CHAIN);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+
             content.add(ModTuffBlocks.TUFF_STAIRS);
             content.add(ModTuffBlocks.TUFF_SLAB);
             content.add(ModTuffBlocks.TUFF_WALL);
@@ -154,44 +163,52 @@ public class ModItemGroup {
             content.addBefore(Blocks.CUT_COPPER, ModCopperBlocks.COPPER_GRATE);
             content.addAfter(Blocks.CUT_COPPER_SLAB, ModCopperBlocks.COPPER_DOOR);
             content.addAfter(ModCopperBlocks.COPPER_DOOR, ModCopperBlocks.COPPER_TRAPDOOR);
-            content.addBefore(Blocks.EXPOSED_COPPER, ModCopperBlocks.COPPER_BULB);
+            content.addAfter(ModCopperBlocks.COPPER_TRAPDOOR, ModCopperBlocks.COPPER_BULB);
+            content.addBefore(Blocks.EXPOSED_COPPER, ModCopperBlocks.COPPER_CHAIN);
 
             content.addAfter(Blocks.EXPOSED_COPPER, ModCopperBlocks.EXPOSED_CHISELED_COPPER);
             content.addBefore(Blocks.EXPOSED_CUT_COPPER, ModCopperBlocks.EXPOSED_COPPER_GRATE);
             content.addAfter(Blocks.EXPOSED_CUT_COPPER_SLAB, ModCopperBlocks.EXPOSED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.EXPOSED_COPPER_DOOR, ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR);
-            content.addBefore(Blocks.WEATHERED_COPPER, ModCopperBlocks.EXPOSED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR, ModCopperBlocks.EXPOSED_COPPER_BULB);
+            content.addBefore(Blocks.WEATHERED_COPPER, ModCopperBlocks.EXPOSED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WEATHERED_COPPER, ModCopperBlocks.WEATHERED_CHISELED_COPPER);
             content.addBefore(Blocks.WEATHERED_CUT_COPPER, ModCopperBlocks.WEATHERED_COPPER_GRATE);
             content.addAfter(Blocks.WEATHERED_CUT_COPPER_SLAB, ModCopperBlocks.WEATHERED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WEATHERED_COPPER_DOOR, ModCopperBlocks.WEATHERED_COPPER_TRAPDOOR);
-            content.addBefore(Blocks.OXIDIZED_COPPER, ModCopperBlocks.WEATHERED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.WEATHERED_COPPER_TRAPDOOR, ModCopperBlocks.WEATHERED_COPPER_BULB);
+            content.addBefore(Blocks.OXIDIZED_COPPER, ModCopperBlocks.WEATHERED_COPPER_CHAIN);
 
             content.addAfter(Blocks.OXIDIZED_COPPER, ModCopperBlocks.OXIDIZED_CHISELED_COPPER);
             content.addBefore(Blocks.OXIDIZED_CUT_COPPER, ModCopperBlocks.OXIDIZED_COPPER_GRATE);
             content.addAfter(Blocks.OXIDIZED_CUT_COPPER_SLAB, ModCopperBlocks.OXIDIZED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_DOOR, ModCopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
-            content.addBefore(Blocks.WAXED_COPPER_BLOCK, ModCopperBlocks.OXIDIZED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_TRAPDOOR, ModCopperBlocks.OXIDIZED_COPPER_BULB);
+            content.addBefore(Blocks.WAXED_COPPER_BLOCK, ModCopperBlocks.OXIDIZED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_COPPER_BLOCK, ModCopperBlocks.WAXED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_CUT_COPPER, ModCopperBlocks.WAXED_COPPER_GRATE);
             content.addAfter(Blocks.WAXED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_DOOR, ModCopperBlocks.WAXED_COPPER_TRAPDOOR);
-            content.addBefore(Blocks.WAXED_EXPOSED_COPPER, ModCopperBlocks.WAXED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.WAXED_COPPER_TRAPDOOR, ModCopperBlocks.WAXED_COPPER_BULB);
+            content.addBefore(Blocks.WAXED_EXPOSED_COPPER, ModCopperBlocks.WAXED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_EXPOSED_COPPER, ModCopperBlocks.WAXED_EXPOSED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_EXPOSED_CUT_COPPER, ModCopperBlocks.WAXED_EXPOSED_COPPER_GRATE);
             content.addAfter(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR, ModCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR);
-            content.addBefore(Blocks.WAXED_WEATHERED_COPPER, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
+            content.addBefore(Blocks.WAXED_WEATHERED_COPPER, ModCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_WEATHERED_COPPER, ModCopperBlocks.WAXED_WEATHERED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_WEATHERED_CUT_COPPER, ModCopperBlocks.WAXED_WEATHERED_COPPER_GRATE);
             content.addAfter(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR,
                     ModCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
-            content.addBefore(Blocks.WAXED_OXIDIZED_COPPER, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR,
+                    ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
+            content.addBefore(Blocks.WAXED_OXIDIZED_COPPER, ModCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_OXIDIZED_COPPER, ModCopperBlocks.WAXED_OXIDIZED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_OXIDIZED_CUT_COPPER, ModCopperBlocks.WAXED_OXIDIZED_COPPER_GRATE);
@@ -200,6 +217,8 @@ public class ModItemGroup {
                     ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR,
                     ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB,
+                    ModCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
 
             content.addAfter(Blocks.REINFORCED_DEEPSLATE, Blocks.TUFF);
             content.addAfter(Blocks.TUFF, ModTuffBlocks.TUFF_STAIRS);
@@ -233,6 +252,7 @@ public class ModItemGroup {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> {
             content.addAfter(Blocks.SOUL_TORCH, ModCopperItems.COPPER_TORCH);
+
             content.addAfter(Blocks.SOUL_LANTERN, ModCopperBlocks.COPPER_LANTERN);
             content.addAfter(ModCopperBlocks.COPPER_LANTERN, ModCopperBlocks.EXPOSED_COPPER_LANTERN);
             content.addAfter(ModCopperBlocks.EXPOSED_COPPER_LANTERN, ModCopperBlocks.WEATHERED_COPPER_LANTERN);
@@ -241,7 +261,21 @@ public class ModItemGroup {
             content.addAfter(ModCopperBlocks.WAXED_COPPER_LANTERN, ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN, ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
             content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN, ModCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
-            content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.WAXED_COPPER_BULB);
+
+            content.addAfter(Blocks.CHAIN, ModCopperBlocks.COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.COPPER_CHAIN, ModCopperBlocks.EXPOSED_COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.EXPOSED_COPPER_CHAIN, ModCopperBlocks.WEATHERED_COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.WEATHERED_COPPER_CHAIN, ModCopperBlocks.OXIDIZED_COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_CHAIN, ModCopperBlocks.WAXED_COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.WAXED_COPPER_CHAIN, ModCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN, ModCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN, ModCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+
+            content.addAfter(Blocks.REDSTONE_LAMP, ModCopperBlocks.COPPER_BULB);
+            content.addAfter(ModCopperBlocks.COPPER_BULB, ModCopperBlocks.EXPOSED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.EXPOSED_COPPER_BULB, ModCopperBlocks.WEATHERED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.WEATHERED_COPPER_BULB, ModCopperBlocks.OXIDIZED_COPPER_BULB);
+            content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_BULB, ModCopperBlocks.WAXED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_BULB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB);
             content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_BULB, ModCopperBlocks.WAXED_OXIDIZED_COPPER_BULB);
