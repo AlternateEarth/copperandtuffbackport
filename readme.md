@@ -52,6 +52,14 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 | Waxed Exposed Copper Trapdoor   | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
 | Waxed Weathered Copper Trapdoor | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
 | Waxed Oxidized Copper Trapdoor  | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Copper Chain                    | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Exposed Copper Chain            | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Weathered Copper Chain          | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Oxidized Copper Chain           | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Copper Chain              | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Exposed Copper Chain      | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Weathered Copper Chain    | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Oxidized Copper Chain     | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Chiseled Tuff                   | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Chiseled Tuff Bricks            | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Polished Tuff                   | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
@@ -92,6 +100,12 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 ## Notifications
 
 XanthianZ if you want to take over this repository, please contact me.
+
+## Local Development
+
+### Linux
+
+- grant execute to .gradlew `chmod +x gradlew`
 
 ## Updating the mod
 

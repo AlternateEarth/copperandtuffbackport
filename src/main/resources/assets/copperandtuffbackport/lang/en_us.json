@@ -67,6 +67,15 @@
   "block.copperandtuffbackport.waxed_oxidized_copper_lantern": "Waxed Oxidized Copper Lantern",
   "block.copperandtuffbackport.waxed_weathered_copper_lantern": "Waxed Weathered Copper Lantern",
 
+  "block.copperandtuffbackport.copper_chain": "Copper Chain",
+  "block.copperandtuffbackport.exposed_copper_chain": "Exposed Copper Chain",
+  "block.copperandtuffbackport.oxidized_copper_chain": "Oxidized Copper Chain",
+  "block.copperandtuffbackport.weathered_copper_chain": "Weathered Copper Chain",
+  "block.copperandtuffbackport.waxed_copper_chain": "Waxed Copper Chain",
+  "block.copperandtuffbackport.waxed_exposed_copper_chain": "Waxed Exposed Copper Chain",
+  "block.copperandtuffbackport.waxed_oxidized_copper_chain": "Waxed Oxidized Copper Chain",
+  "block.copperandtuffbackport.waxed_weathered_copper_chain": "Waxed Weathered Copper Chain",
+
   "item.copperandtuffbackport.copper_nugget": "Copper Nugget",
 
   "item.copperandtuffbackport.copper_helmet": "Copper Helmet",
