@@ -84,6 +84,15 @@ public class ModCopperBlocks {
     public static final Block OXIDIZED_COPPER_CHAIN = new OxidizableChainBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(COPPER_CHAIN).mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
     public static final Block WAXED_OXIDIZED_COPPER_CHAIN = new ChainBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_CHAIN));
 
+    public static final Block COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(IRON_BARS).sounds(BlockSoundGroup.COPPER));
+    public static final Block WAXED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(COPPER_BARS));
+    public static final Block EXPOSED_COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copyOf(COPPER_BARS).mapColor(EXPOSED_COPPER.getDefaultMapColor()));
+    public static final Block WAXED_EXPOSED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(EXPOSED_COPPER_BARS));
+    public static final Block OXIDIZED_COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(COPPER_BARS).mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
+    public static final Block WAXED_OXIDIZED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_BARS));
+    public static final Block WEATHERED_COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copyOf(COPPER_BARS).mapColor(WEATHERED_COPPER.getDefaultMapColor()));
+    public static final Block WAXED_WEATHERED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(WEATHERED_COPPER_BARS));
+
     public static final Block COPPER_TORCH = new TorchBlock(
         Block.Settings
             .create()
@@ -159,6 +168,15 @@ public class ModCopperBlocks {
         register("waxed_exposed_copper_chain", WAXED_EXPOSED_COPPER_CHAIN);
         register("waxed_oxidized_copper_chain", WAXED_OXIDIZED_COPPER_CHAIN);
         register("waxed_weathered_copper_chain", WAXED_WEATHERED_COPPER_CHAIN);
+
+        register("copper_bars", COPPER_BARS);
+        register("exposed_copper_bars", EXPOSED_COPPER_BARS);
+        register("oxidized_copper_bars", OXIDIZED_COPPER_BARS);
+        register("weathered_copper_bars", WEATHERED_COPPER_BARS);
+        register("waxed_copper_bars", WAXED_COPPER_BARS);
+        register("waxed_exposed_copper_bars", WAXED_EXPOSED_COPPER_BARS);
+        register("waxed_oxidized_copper_bars", WAXED_OXIDIZED_COPPER_BARS);
+        register("waxed_weathered_copper_bars", WAXED_WEATHERED_COPPER_BARS);
 
         registerBlockOnly("copper_torch", COPPER_TORCH);
         registerBlockOnly("copper_wall_torch", COPPER_WALL_TORCH);
