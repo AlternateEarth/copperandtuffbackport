@@ -1,0 +1,7 @@
+{
+  "parent": "copperandtuffbackport:block/template_bars_side",
+  "textures": {
+    "bars": "copperandtuffbackport:block/copper_bars",
+    "edge": "copperandtuffbackport:block/copper_bars"
+  }
+}
