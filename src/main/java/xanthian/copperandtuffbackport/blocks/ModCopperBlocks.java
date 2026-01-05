@@ -84,7 +84,7 @@ public class ModCopperBlocks {
     public static final Block OXIDIZED_COPPER_CHAIN = new OxidizableChainBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copyOf(COPPER_CHAIN).mapColor(OXIDIZED_COPPER.getDefaultMapColor()));
     public static final Block WAXED_OXIDIZED_COPPER_CHAIN = new ChainBlock(FabricBlockSettings.copyOf(OXIDIZED_COPPER_CHAIN));
 
-    public static final Block COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(IRON_BARS));
+    public static final Block COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(IRON_BARS).sounds(BlockSoundGroup.COPPER));
     public static final Block WAXED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(COPPER_BARS));
     public static final Block EXPOSED_COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copyOf(COPPER_BARS).mapColor(EXPOSED_COPPER.getDefaultMapColor()));
     public static final Block WAXED_EXPOSED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(EXPOSED_COPPER_BARS));
