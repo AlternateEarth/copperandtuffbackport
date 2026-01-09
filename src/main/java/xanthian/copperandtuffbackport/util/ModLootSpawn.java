@@ -5,6 +5,7 @@ import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.BinomialLootNumberProvider;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
+import xanthian.copperandtuffbackport.items.ModTrimItems;
 
 public class ModLootSpawn {
     private static final int TREASURE_AMOUNT = 1;
@@ -81,6 +82,16 @@ public class ModLootSpawn {
                             .rolls(BinomialLootNumberProvider.create(
                                     TREASURE_AMOUNT,
                                     .056F));
+                    tableBuilder.pool(poolBuilder);
+                }
+
+                case "minecraft:entities/skeleton_horse" -> {
+                    // 1 at 25% chance
+                    LootPool.Builder poolBuilder = LootPool.builder()
+                            .with(ItemEntry.builder(ModTrimItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE))
+                            .rolls(BinomialLootNumberProvider.create(
+                                    TREASURE_AMOUNT,
+                                    .25F));
                     tableBuilder.pool(poolBuilder);
                 }
             }

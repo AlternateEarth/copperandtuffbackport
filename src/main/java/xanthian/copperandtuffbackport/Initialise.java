@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
+import xanthian.copperandtuffbackport.items.ModTrimItems;
 import xanthian.copperandtuffbackport.util.ModItemGroup;
 import xanthian.copperandtuffbackport.util.ModLootSpawn;
 import xanthian.copperandtuffbackport.util.ModRegistries;
@@ -18,6 +19,7 @@ public class Initialise implements ModInitializer {
 
         ModCopperBlocks.registerBlocks();
         ModCopperItems.registerItems();
+        ModTrimItems.registerItems();
         ModTuffBlocks.registerBlocks();
 
         ModItemGroup.addToMod();

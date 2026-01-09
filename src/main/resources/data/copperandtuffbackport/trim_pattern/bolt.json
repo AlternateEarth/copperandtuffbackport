@@ -1,0 +1,7 @@
+{
+  "asset_id": "copperandtuffbackport:bolt",
+  "description": {
+    "translate": "trim_pattern.copperandtuffbackport.bolt_armor_trim_smithing_template"
+  },
+  "template_item": "copperandtuffbackport:bolt_armor_trim_smithing_template"
+}
