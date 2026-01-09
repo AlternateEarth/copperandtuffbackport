@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "copperandtuffbackport:copper_torch"
+            "items": [
+              "copperandtuffbackport:copper_torch"
+            ]
           }
         ]
       },

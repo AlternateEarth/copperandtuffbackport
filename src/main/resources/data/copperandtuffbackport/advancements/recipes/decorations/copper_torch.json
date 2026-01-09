@@ -5,10 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "#c:copper_nuggets"
-            ]
-
+            "tag": "c:copper_nuggets"
           }
         ]
       },

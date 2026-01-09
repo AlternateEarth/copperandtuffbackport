@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copper_ingot": {
+    "has_bolt_armor_trim_smithing_template": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:copper_ingot"
+              "copperandtuffbackport:bolt_armor_trim_smithing_template"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "copperandtuffbackport:copper_bars"
+        "recipe": "copperandtuffbackport:bolt_armor_trim_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_copper_ingot"
+      "has_bolt_armor_trim_smithing_template"
     ]
   ],
   "rewards": {
     "recipes": [
-      "copperandtuffbackport:copper_bars"
+      "copperandtuffbackport:bolt_armor_trim_smithing_template"
     ]
   }
 }
