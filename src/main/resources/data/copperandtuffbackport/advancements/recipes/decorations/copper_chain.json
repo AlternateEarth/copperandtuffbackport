@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:copper_ingot"
+            "items": [
+              "minecraft:copper_ingot"
+            ]
           }
         ]
       },
@@ -15,10 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "#c:copper_nuggets"
-            ]
-
+            "tag": "c:copper_nuggets"
           }
         ]
       },

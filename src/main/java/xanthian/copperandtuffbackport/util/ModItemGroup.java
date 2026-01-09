@@ -16,6 +16,7 @@ import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
+import xanthian.copperandtuffbackport.items.ModTrimItems;
 
 public class ModItemGroup {
     public static final RegistryKey<ItemGroup> BACKPORT_MOD_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(),
@@ -132,6 +133,9 @@ public class ModItemGroup {
             content.add(ModTuffBlocks.TUFF_BRICK_SLAB);
             content.add(ModTuffBlocks.TUFF_BRICK_WALL);
             content.add(ModTuffBlocks.CHISELED_TUFF_BRICKS);
+
+            // Trims
+            content.add(ModTrimItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE);
         });
     }
 
@@ -161,6 +165,7 @@ public class ModItemGroup {
     public static void addToIngredients() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
             content.addAfter(Items.IRON_NUGGET, ModCopperItems.COPPER_NUGGET);
+            content.addAfter(Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, ModTrimItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE);
         });
     }
 
