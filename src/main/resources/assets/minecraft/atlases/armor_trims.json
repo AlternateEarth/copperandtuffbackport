@@ -1,28 +1,69 @@
-
-  {
-    "sources": [
+{
+  "sources": [
     {
       "type": "paletted_permutations",
       "textures": [
-		"copperandtuffbackport:trims/models/armor/bolt",
+        "minecraft:trims/models/armor/coast",
+        "minecraft:trims/models/armor/dune",
+        "minecraft:trims/models/armor/eye",
+        "minecraft:trims/models/armor/host",
+        "minecraft:trims/models/armor/rib",
+        "minecraft:trims/models/armor/sentry",
+        "minecraft:trims/models/armor/shaper",
+        "minecraft:trims/models/armor/silence",
+        "minecraft:trims/models/armor/snout",
+        "minecraft:trims/models/armor/spire",
+        "minecraft:trims/models/armor/tide",
+        "minecraft:trims/models/armor/vex",
+        "minecraft:trims/models/armor/ward",
+        "minecraft:trims/models/armor/wild",
+        "copperandtuffbackport:trims/models/armor/bolt"
+      ],
+      "palette_key": "minecraft:trims/color_palettes/trim_palette",
+      "permutations": {
+        "quartz": "minecraft:trims/color_palettes/quartz",
+        "iron": "minecraft:trims/color_palettes/iron",
+        "netherite": "minecraft:trims/color_palettes/netherite",
+        "redstone": "minecraft:trims/color_palettes/redstone",
+        "copper": "minecraft:trims/color_palettes/copper",
+        "gold": "minecraft:trims/color_palettes/gold",
+        "emerald": "minecraft:trims/color_palettes/emerald",
+        "diamond": "minecraft:trims/color_palettes/diamond",
+        "lapis": "minecraft:trims/color_palettes/lapis",
+        "amethyst": "minecraft:trims/color_palettes/amethyst"
+      }
+    },
+    {
+      "type": "paletted_permutations",
+      "textures": [
+        "minecraft:trims/models/armor/coast_leggings",
+        "minecraft:trims/models/armor/dune_leggings",
+        "minecraft:trims/models/armor/eye_leggings",
+        "minecraft:trims/models/armor/host_leggings",
+        "minecraft:trims/models/armor/rib_leggings",
+        "minecraft:trims/models/armor/sentry_leggings",
+        "minecraft:trims/models/armor/shaper_leggings",
+        "minecraft:trims/models/armor/silence_leggings",
+        "minecraft:trims/models/armor/snout_leggings",
+        "minecraft:trims/models/armor/spire_leggings",
+        "minecraft:trims/models/armor/tide_leggings",
+        "minecraft:trims/models/armor/vex_leggings",
+        "minecraft:trims/models/armor/ward_leggings",
+        "minecraft:trims/models/armor/wild_leggings",
         "copperandtuffbackport:trims/models/armor/bolt_leggings"
       ],
-      "palette_key": "trims/color_palettes/trim_palette",
+      "palette_key": "minecraft:trims/color_palettes/trim_palette",
       "permutations": {
-        "amethyst": "trims/color_palettes/amethyst",
-        "copper": "trims/color_palettes/copper",
-        "diamond": "trims/color_palettes/diamond",
-        "diamond_darker": "trims/color_palettes/diamond_darker",
-        "emerald": "trims/color_palettes/emerald",
-        "gold": "trims/color_palettes/gold",
-        "gold_darker": "trims/color_palettes/gold_darker",
-        "iron": "trims/color_palettes/iron",
-        "iron_darker": "trims/color_palettes/iron_darker",
-        "lapis": "trims/color_palettes/lapis",
-        "netherite": "trims/color_palettes/netherite",
-        "netherite_darker": "trims/color_palettes/netherite_darker",
-        "quartz": "trims/color_palettes/quartz",
-        "redstone": "trims/color_palettes/redstone"
+        "quartz": "minecraft:trims/color_palettes/quartz",
+        "iron": "minecraft:trims/color_palettes/iron",
+        "netherite": "minecraft:trims/color_palettes/netherite",
+        "redstone": "minecraft:trims/color_palettes/redstone",
+        "copper": "minecraft:trims/color_palettes/copper",
+        "gold": "minecraft:trims/color_palettes/gold",
+        "emerald": "minecraft:trims/color_palettes/emerald",
+        "diamond": "minecraft:trims/color_palettes/diamond",
+        "lapis": "minecraft:trims/color_palettes/lapis",
+        "amethyst": "minecraft:trims/color_palettes/amethyst"
       }
     }
   ]
