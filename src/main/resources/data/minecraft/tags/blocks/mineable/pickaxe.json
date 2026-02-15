@@ -69,6 +69,14 @@
     "copperandtuffbackport:waxed_copper_chain",
     "copperandtuffbackport:waxed_exposed_copper_chain",
     "copperandtuffbackport:waxed_weathered_copper_chain",
-    "copperandtuffbackport:waxed_oxidized_copper_chain"
+    "copperandtuffbackport:waxed_oxidized_copper_chain",
+    "copperandtuffbackport:copper_bars",
+    "copperandtuffbackport:exposed_copper_bars",
+    "copperandtuffbackport:weathered_copper_bars",
+    "copperandtuffbackport:oxidized_copper_bars",
+    "copperandtuffbackport:waxed_copper_bars",
+    "copperandtuffbackport:waxed_exposed_copper_bars",
+    "copperandtuffbackport:waxed_weathered_copper_bars",
+    "copperandtuffbackport:waxed_oxidized_copper_bars"
   ]
 }

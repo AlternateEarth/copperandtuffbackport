@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "copperandtuffbackport:bolt_armor_trim_smithing_template"
+    },
+    "C": [
+      {
+        "item": "minecraft:copper_block"
+      },
+      {
+        "item": "minecraft:waxed_copper_block"
+      }
+    ]
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "copperandtuffbackport:bolt_armor_trim_smithing_template"
+  }
+}

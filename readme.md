@@ -60,6 +60,14 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 | Waxed Exposed Copper Chain      | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Waxed Weathered Copper Chain    | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Waxed Oxidized Copper Chain     | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Copper Bars                     | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Exposed Copper Bars             | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Weathered Copper Bars           | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Oxidized Copper Bars            | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Copper Bars               | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Exposed Copper Bars       | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Weathered Copper Bars     | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Oxidized Copper Bars      | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
 | Chiseled Tuff                   | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Chiseled Tuff Bricks            | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
 | Polished Tuff                   | Block    | Y              | Y      | Y          | Y            | Pickaxe       |

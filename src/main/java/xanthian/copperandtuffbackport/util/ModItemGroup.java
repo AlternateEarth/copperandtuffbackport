@@ -16,6 +16,7 @@ import xanthian.copperandtuffbackport.Initialise;
 import xanthian.copperandtuffbackport.blocks.ModCopperBlocks;
 import xanthian.copperandtuffbackport.blocks.ModTuffBlocks;
 import xanthian.copperandtuffbackport.items.ModCopperItems;
+import xanthian.copperandtuffbackport.items.ModTrimItems;
 
 public class ModItemGroup {
     public static final RegistryKey<ItemGroup> BACKPORT_MOD_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(),
@@ -110,6 +111,15 @@ public class ModItemGroup {
             content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
             content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
 
+            content.add(ModCopperBlocks.COPPER_BARS);
+            content.add(ModCopperBlocks.EXPOSED_COPPER_BARS);
+            content.add(ModCopperBlocks.WEATHERED_COPPER_BARS);
+            content.add(ModCopperBlocks.OXIDIZED_COPPER_BARS);
+            content.add(ModCopperBlocks.WAXED_COPPER_BARS);
+            content.add(ModCopperBlocks.WAXED_EXPOSED_COPPER_BARS);
+            content.add(ModCopperBlocks.WAXED_WEATHERED_COPPER_BARS);
+            content.add(ModCopperBlocks.WAXED_OXIDIZED_COPPER_BARS);
+
             content.add(ModTuffBlocks.TUFF_STAIRS);
             content.add(ModTuffBlocks.TUFF_SLAB);
             content.add(ModTuffBlocks.TUFF_WALL);
@@ -123,6 +133,9 @@ public class ModItemGroup {
             content.add(ModTuffBlocks.TUFF_BRICK_SLAB);
             content.add(ModTuffBlocks.TUFF_BRICK_WALL);
             content.add(ModTuffBlocks.CHISELED_TUFF_BRICKS);
+
+            // Trims
+            content.add(ModTrimItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE);
         });
     }
 
@@ -152,6 +165,7 @@ public class ModItemGroup {
     public static void addToIngredients() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
             content.addAfter(Items.IRON_NUGGET, ModCopperItems.COPPER_NUGGET);
+            content.addAfter(Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, ModTrimItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE);
         });
     }
 
@@ -161,49 +175,56 @@ public class ModItemGroup {
 
             content.addAfter(Blocks.COPPER_BLOCK, ModCopperBlocks.CHISELED_COPPER);
             content.addBefore(Blocks.CUT_COPPER, ModCopperBlocks.COPPER_GRATE);
-            content.addAfter(Blocks.CUT_COPPER_SLAB, ModCopperBlocks.COPPER_DOOR);
+            content.addAfter(Blocks.CUT_COPPER_SLAB, ModCopperBlocks.COPPER_BARS);
+            content.addAfter(ModCopperBlocks.COPPER_BARS, ModCopperBlocks.COPPER_DOOR);
             content.addAfter(ModCopperBlocks.COPPER_DOOR, ModCopperBlocks.COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.COPPER_TRAPDOOR, ModCopperBlocks.COPPER_BULB);
             content.addBefore(Blocks.EXPOSED_COPPER, ModCopperBlocks.COPPER_CHAIN);
 
             content.addAfter(Blocks.EXPOSED_COPPER, ModCopperBlocks.EXPOSED_CHISELED_COPPER);
             content.addBefore(Blocks.EXPOSED_CUT_COPPER, ModCopperBlocks.EXPOSED_COPPER_GRATE);
-            content.addAfter(Blocks.EXPOSED_CUT_COPPER_SLAB, ModCopperBlocks.EXPOSED_COPPER_DOOR);
+            content.addAfter(Blocks.EXPOSED_CUT_COPPER_SLAB, ModCopperBlocks.EXPOSED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.EXPOSED_COPPER_BARS, ModCopperBlocks.EXPOSED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.EXPOSED_COPPER_DOOR, ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.EXPOSED_COPPER_TRAPDOOR, ModCopperBlocks.EXPOSED_COPPER_BULB);
             content.addBefore(Blocks.WEATHERED_COPPER, ModCopperBlocks.EXPOSED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WEATHERED_COPPER, ModCopperBlocks.WEATHERED_CHISELED_COPPER);
             content.addBefore(Blocks.WEATHERED_CUT_COPPER, ModCopperBlocks.WEATHERED_COPPER_GRATE);
-            content.addAfter(Blocks.WEATHERED_CUT_COPPER_SLAB, ModCopperBlocks.WEATHERED_COPPER_DOOR);
+            content.addAfter(Blocks.WEATHERED_CUT_COPPER_SLAB, ModCopperBlocks.WEATHERED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.WEATHERED_COPPER_BARS, ModCopperBlocks.WEATHERED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WEATHERED_COPPER_DOOR, ModCopperBlocks.WEATHERED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.WEATHERED_COPPER_TRAPDOOR, ModCopperBlocks.WEATHERED_COPPER_BULB);
             content.addBefore(Blocks.OXIDIZED_COPPER, ModCopperBlocks.WEATHERED_COPPER_CHAIN);
 
             content.addAfter(Blocks.OXIDIZED_COPPER, ModCopperBlocks.OXIDIZED_CHISELED_COPPER);
             content.addBefore(Blocks.OXIDIZED_CUT_COPPER, ModCopperBlocks.OXIDIZED_COPPER_GRATE);
-            content.addAfter(Blocks.OXIDIZED_CUT_COPPER_SLAB, ModCopperBlocks.OXIDIZED_COPPER_DOOR);
+            content.addAfter(Blocks.OXIDIZED_CUT_COPPER_SLAB, ModCopperBlocks.OXIDIZED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_BARS, ModCopperBlocks.OXIDIZED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_DOOR, ModCopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.OXIDIZED_COPPER_TRAPDOOR, ModCopperBlocks.OXIDIZED_COPPER_BULB);
             content.addBefore(Blocks.WAXED_COPPER_BLOCK, ModCopperBlocks.OXIDIZED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_COPPER_BLOCK, ModCopperBlocks.WAXED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_CUT_COPPER, ModCopperBlocks.WAXED_COPPER_GRATE);
-            content.addAfter(Blocks.WAXED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_COPPER_DOOR);
+            content.addAfter(Blocks.WAXED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.WAXED_COPPER_BARS, ModCopperBlocks.WAXED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_DOOR, ModCopperBlocks.WAXED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.WAXED_COPPER_TRAPDOOR, ModCopperBlocks.WAXED_COPPER_BULB);
             content.addBefore(Blocks.WAXED_EXPOSED_COPPER, ModCopperBlocks.WAXED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_EXPOSED_COPPER, ModCopperBlocks.WAXED_EXPOSED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_EXPOSED_CUT_COPPER, ModCopperBlocks.WAXED_EXPOSED_COPPER_GRATE);
-            content.addAfter(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
+            content.addAfter(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_EXPOSED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_BARS, ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_DOOR, ModCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR, ModCopperBlocks.WAXED_EXPOSED_COPPER_BULB);
             content.addBefore(Blocks.WAXED_WEATHERED_COPPER, ModCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
 
             content.addAfter(Blocks.WAXED_WEATHERED_COPPER, ModCopperBlocks.WAXED_WEATHERED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_WEATHERED_CUT_COPPER, ModCopperBlocks.WAXED_WEATHERED_COPPER_GRATE);
-            content.addAfter(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
+            content.addAfter(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_WEATHERED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_BARS, ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_DOOR,
                     ModCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR,
@@ -212,7 +233,8 @@ public class ModItemGroup {
 
             content.addAfter(Blocks.WAXED_OXIDIZED_COPPER, ModCopperBlocks.WAXED_OXIDIZED_CHISELED_COPPER);
             content.addBefore(Blocks.WAXED_OXIDIZED_CUT_COPPER, ModCopperBlocks.WAXED_OXIDIZED_COPPER_GRATE);
-            content.addAfter(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
+            content.addAfter(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB, ModCopperBlocks.WAXED_OXIDIZED_COPPER_BARS);
+            content.addAfter(ModCopperBlocks.WAXED_OXIDIZED_COPPER_BARS, ModCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
             content.addAfter(ModCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR,
                     ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
             content.addAfter(ModCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR,

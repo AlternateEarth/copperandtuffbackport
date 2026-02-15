@@ -76,6 +76,15 @@
   "block.copperandtuffbackport.waxed_oxidized_copper_chain": "Waxed Oxidized Copper Chain",
   "block.copperandtuffbackport.waxed_weathered_copper_chain": "Waxed Weathered Copper Chain",
 
+  "block.copperandtuffbackport.copper_bars": "Copper Bars",
+  "block.copperandtuffbackport.exposed_copper_bars": "Exposed Copper Bars",
+  "block.copperandtuffbackport.oxidized_copper_bars": "Oxidized Copper Bars",
+  "block.copperandtuffbackport.weathered_copper_bars": "Weathered Copper Bars",
+  "block.copperandtuffbackport.waxed_copper_bars": "Waxed Copper Bars",
+  "block.copperandtuffbackport.waxed_exposed_copper_bars": "Waxed Exposed Copper Bars",
+  "block.copperandtuffbackport.waxed_oxidized_copper_bars": "Waxed Oxidized Copper Bars",
+  "block.copperandtuffbackport.waxed_weathered_copper_bars": "Waxed Weathered Copper Bars",
+
   "item.copperandtuffbackport.copper_nugget": "Copper Nugget",
 
   "item.copperandtuffbackport.copper_helmet": "Copper Helmet",
@@ -88,6 +97,9 @@
   "item.copperandtuffbackport.copper_axe": "Copper Axe",
   "item.copperandtuffbackport.copper_shovel": "Copper Shovel",
   "item.copperandtuffbackport.copper_hoe": "Copper Hoe",
+
+  "item.copperandtuffbackport.bolt_armor_trim_smithing_template": "Smithing Template",
+  "item.copperandtuffbackport.bolt_armor_trim_smithing_template.new": "Bolt Armor Trim",
 
   "block.copperandtuffbackport.chiseled_stone_bricks": "Chiseled Stone Bricks",
   "block.copperandtuffbackport.chiseled_tuff": "Chiseled Tuff",
@@ -102,5 +114,8 @@
   "block.copperandtuffbackport.tuff_bricks": "Tuff Bricks",
   "block.copperandtuffbackport.tuff_slab": "Tuff Slab",
   "block.copperandtuffbackport.tuff_stairs": "Tuff Stairs",
-  "block.copperandtuffbackport.tuff_wall": "Tuff Wall"
+  "block.copperandtuffbackport.tuff_wall": "Tuff Wall",
+
+  "trim_pattern.copperandtuffbackport.bolt": "Bolt Armor Trim",
+  "trim_pattern.copperandtuffbackport.bolt_armor_trim_smithing_template": "Bolt Armor Trim"
 }
