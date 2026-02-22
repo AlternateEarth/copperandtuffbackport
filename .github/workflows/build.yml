@@ -53,7 +53,7 @@ jobs:
 
       # Only publish on push to main branch
       - name: Publish Build Artifacts to GitHub Release and Modrinth
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/versions/')) }}
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-token: "${{env.MODRINTH_TOKEN}}"
