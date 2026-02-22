@@ -2,10 +2,10 @@ name: build
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "versions/**"]
     paths-ignore: ["**.md", "**/assets/modrinth/**"]
   pull_request:
-    branches: ["main"]
+    branches: ["main", "versions/**"]
     paths-ignore: ["**.md", "**/assets/modrinth/**"]
 
 env:
