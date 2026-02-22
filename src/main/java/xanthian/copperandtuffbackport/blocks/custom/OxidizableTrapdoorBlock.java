@@ -14,7 +14,7 @@ public class OxidizableTrapdoorBlock extends TrapdoorBlock implements Oxidizable
 
 
     public OxidizableTrapdoorBlock(BlockSetType type, OxidationLevel oxidationLevel, Settings settings) {
-        super(settings, type);
+        super(type, settings);
         this.oxidationLevel = oxidationLevel;
     }
 

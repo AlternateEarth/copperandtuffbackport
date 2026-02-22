@@ -9,7 +9,7 @@ import net.minecraft.world.WorldAccess;
 public class CopperDoorBlock extends DoorBlock {
 
     public CopperDoorBlock(AbstractBlock.Settings settings, BlockSetType type) {
-        super(settings, type);
+        super(type, settings);
     }
 
     @Override

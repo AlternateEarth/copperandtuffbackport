@@ -12,7 +12,7 @@ public class OxidizableDoorBlock extends DoorBlock implements Oxidizable {
     private final OxidationLevel oxidationLevel;
 
     public OxidizableDoorBlock(BlockSetType type, Oxidizable.OxidationLevel oxidationLevel, Settings settings) {
-        super(settings, type);
+        super(type, settings);
         this.oxidationLevel = oxidationLevel;
     }
 
