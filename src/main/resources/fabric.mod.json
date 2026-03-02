@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "CopperandTuffBackport",
   "description": "Backport of 1.21 Copper & Tuff features",
-  "authors": ["Xanthian"],
+  "authors": ["Xanthian", "kylelaverty"],
   "contact": {
     "repo": "https://github.com/Chris/CopperandTuffBackport"
   },
