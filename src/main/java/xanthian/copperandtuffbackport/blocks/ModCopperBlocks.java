@@ -93,16 +93,8 @@ public class ModCopperBlocks {
     public static final Block WEATHERED_COPPER_BARS = new OxidizableBarBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copyOf(COPPER_BARS).mapColor(WEATHERED_COPPER.getDefaultMapColor()));
     public static final Block WAXED_WEATHERED_COPPER_BARS = new PaneBlock(FabricBlockSettings.copyOf(WEATHERED_COPPER_BARS));
 
-    public static final Block COPPER_TORCH = new TorchBlock(
-        ModParticles.COPPER_FLAME, 
-        Block.Settings
-            .create()
-            .noCollision()
-            .breakInstantly()
-            .luminance(state -> COPPER_TORCH_LIGHT_LEVEL)
-            .sounds(BlockSoundGroup.WOOD)
-            .pistonBehavior(PistonBehavior.DESTROY));
-    public static final Block COPPER_WALL_TORCH = new WallTorchBlock(ModParticles.COPPER_FLAME, FabricBlockSettings.copyOf(COPPER_TORCH).dropsLike(COPPER_TORCH));
+    public static final Block COPPER_TORCH = new TorchBlock(ModParticles.COPPER_FLAME, FabricBlockSettings.copyOf(Blocks.TORCH).luminance(state -> COPPER_TORCH_LIGHT_LEVEL));
+    public static final Block COPPER_WALL_TORCH = new WallTorchBlock(ModParticles.COPPER_FLAME, FabricBlockSettings.copyOf(COPPER_TORCH));
 
     public static void registerBlocks() {
 
