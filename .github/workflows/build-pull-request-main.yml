@@ -1,0 +1,24 @@
+name: build-pull-request
+
+on:
+  pull_request:
+    branches: ["main"]
+    paths-ignore: ["**.md", "**/assets/modrinth/**"]
+
+env:
+  JAVA_VERSION: 21
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout The Repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 #v7.0.0
+
+      - name: Build mod
+        uses: ./.github/actions/build-mod
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          verify-datagen: true
