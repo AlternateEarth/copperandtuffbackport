@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:oxidized_copper_grate_from_oxidized_copper_stonecutting"
+        "recipe": "copperandtuffbackport:oxidized_copper_grate_from_oxidized_copper_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:oxidized_copper_grate_from_oxidized_copper_stonecutting"
+      "copperandtuffbackport:oxidized_copper_grate_from_oxidized_copper_stonecutting"
     ]
   }
 }

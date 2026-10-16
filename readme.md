@@ -10,89 +10,108 @@ Original version created by [XanthianZ](https://github.com/xanthian), last updat
 
 ### Items and blocks
 
-| Block                           | Type     | Minecraft Tags | Recipe | Loot Table | Advancements | Tool Required |
-| ------------------------------- | -------- | -------------- | ------ | ---------- | ------------ | ------------- |
-| Chiseled Copper                 | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Exposed Chiseled Copper         | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Weathered Chiseled Copper       | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Oxidized Chiseled Copper        | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Chiseled Copper           | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Exposed Chiseled Copper   | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Weathered Chiseled Copper | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Oxidized Chiseled Copper  | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Copper Grate                    | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Exposed Copper Grate            | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Weathered Copper Grate          | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Oxidized Copper Grate           | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Copper Grate              | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Exposed Copper Grate      | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Weathered Copper Grate    | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Oxidized Copper Grate     | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Copper Bulb                     | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Exposed Copper Bulb             | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Weathered Copper Bulb           | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Oxidized Copper Bulb            | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Copper Bulb               | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Exposed Copper Bulb       | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Weathered Copper Bulb     | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Oxidized Copper Bulb      | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Copper Door                     | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Exposed Copper Door             | Door     | Y              | N/A    | Y          | Y            | Pickaxe       |
-| Weathered Copper Door           | Door     | Y              | N/A    | Y          | Y            | Pickaxe       |
-| Oxidized Copper Door            | Door     | Y              | N/A    | Y          | Y            | Pickaxe       |
-| Waxed Copper Door               | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Exposed Copper Door       | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Weathered Copper Door     | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Oxidized Copper Door      | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Copper Trapdoor                 | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Exposed Copper Trapdoor         | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Weathered Copper Trapdoor       | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Oxidized Copper Trapdoor        | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Copper Trapdoor           | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Exposed Copper Trapdoor   | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Weathered Copper Trapdoor | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Waxed Oxidized Copper Trapdoor  | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
-| Copper Chain                    | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Exposed Copper Chain            | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Weathered Copper Chain          | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Oxidized Copper Chain           | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Copper Chain              | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Exposed Copper Chain      | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Weathered Copper Chain    | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Oxidized Copper Chain     | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Copper Bars                     | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Exposed Copper Bars             | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Weathered Copper Bars           | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Oxidized Copper Bars            | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Copper Bars               | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Exposed Copper Bars       | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Weathered Copper Bars     | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Waxed Oxidized Copper Bars      | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Chiseled Tuff                   | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Chiseled Tuff Bricks            | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Polished Tuff                   | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Polished Tuff Slab              | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Polished Tuff Stairs            | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Polished Tuff Wall              | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Slab                       | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Stairs                     | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Wall                       | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Bricks                     | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Brick Slab                 | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Brick Stairs               | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
-| Tuff Brick Wall                 | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
-| Copper Helmet                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Chestplate               | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Leggings                 | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Boots                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Sword                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Shovel                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Pickaxe                  | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Axe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Hoe                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Horse Armor              | Item     | Y              | Y      | Y          | Y            | N/A           |
-| Copper Nugget                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
-| Copper Torch                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Block                             | Type     | Minecraft Tags | Recipe | Loot Table | Advancements | Tool Required |
+| --------------------------------- | -------- | -------------- | ------ | ---------- | ------------ | ------------- |
+| Chiseled Copper                   | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Exposed Chiseled Copper           | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Weathered Chiseled Copper         | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Oxidized Chiseled Copper          | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Chiseled Copper             | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Exposed Chiseled Copper     | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Weathered Chiseled Copper   | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Oxidized Chiseled Copper    | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Copper Grate                      | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Exposed Copper Grate              | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Weathered Copper Grate            | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Oxidized Copper Grate             | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Copper Grate                | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Exposed Copper Grate        | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Weathered Copper Grate      | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Oxidized Copper Grate       | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Copper Bulb                       | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Exposed Copper Bulb               | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Weathered Copper Bulb             | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Oxidized Copper Bulb              | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Copper Bulb                 | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Exposed Copper Bulb         | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Weathered Copper Bulb       | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Oxidized Copper Bulb        | Block    | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Copper Door                       | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Exposed Copper Door               | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Weathered Copper Door             | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Oxidized Copper Door              | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Copper Door                 | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Exposed Copper Door         | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Weathered Copper Door       | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Oxidized Copper Door        | Door     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Copper Trapdoor                   | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Exposed Copper Trapdoor           | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Weathered Copper Trapdoor         | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Oxidized Copper Trapdoor          | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Copper Trapdoor             | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Exposed Copper Trapdoor     | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Weathered Copper Trapdoor   | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Waxed Oxidized Copper Trapdoor    | Trapdoor | Y              | Y      | Y          | Y            | Stone Pickaxe |
+| Copper Lantern                    | Lantern  | Y              | Y      | Y          | Y            | Pickaxe       |
+| Exposed Copper Lantern            | Lantern  | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Weathered Copper Lantern          | Lantern  | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Oxidized Copper Lantern           | Lantern  | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Waxed Copper Lantern              | Lantern  | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Exposed Copper Lantern      | Lantern  | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Weathered Copper Lantern    | Lantern  | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Oxidized Copper Lantern     | Lantern  | Y              | Y      | Y          | Y            | Pickaxe       |
+| Copper Chain                      | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Exposed Copper Chain              | Chain    | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Weathered Copper Chain            | Chain    | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Oxidized Copper Chain             | Chain    | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Waxed Copper Chain                | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Exposed Copper Chain        | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Weathered Copper Chain      | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Oxidized Copper Chain       | Chain    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Copper Bars                       | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Exposed Copper Bars               | Bars     | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Weathered Copper Bars             | Bars     | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Oxidized Copper Bars              | Bars     | Y              | N/A    | Y          | N/A          | Pickaxe       |
+| Waxed Copper Bars                 | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Exposed Copper Bars         | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Weathered Copper Bars       | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Waxed Oxidized Copper Bars        | Bars     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Chiseled Tuff                     | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Chiseled Tuff Bricks              | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Polished Tuff                     | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Polished Tuff Slab                | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Polished Tuff Stairs              | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Polished Tuff Wall                | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Slab                         | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Stairs                       | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Wall                         | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Bricks                       | Block    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Brick Slab                   | Slab     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Brick Stairs                 | Stair    | Y              | Y      | Y          | Y            | Pickaxe       |
+| Tuff Brick Wall                   | Wall     | Y              | Y      | Y          | Y            | Pickaxe       |
+| Copper Helmet                     | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Chestplate                 | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Leggings                   | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Boots                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Sword                      | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Shovel                     | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Pickaxe                    | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Axe                        | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Hoe                        | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Horse Armor                | Item     | N/A            | Y      | N/A        | Y            | N/A           |
+| Copper Nugget                     | Item     | Y              | Y      | N/A        | Y            | N/A           |
+| Copper Torch                      | Item     | Y              | Y      | Y          | Y            | N/A           |
+| Bolt Armor Trim Smithing Template | Item     | Y              | Y      | N/A        | Y            | N/A           |
+
+### Notes
+
+- **N/A** means the column doesn't apply, or the thing doesn't exist. Items have no loot table, and the exposed, weathered and oxidized stages of copper lanterns, chains and bars have no crafting recipe or advancement. Those stages are only reached by oxidation.
+- **Waxed** blocks are made by combining the unwaxed block with honeycomb, or crafted from waxed copper blocks where a recipe exists.
+- The **Bolt Armor Trim Smithing Template** is a smithing template for the bolt armor trim, which works on copper armor.
+
+### Loot
+
+Copper horse armor is added to these chest loot tables, one roll at the stated chance: simple dungeon 19.4%, desert pyramid 17%, nether bridge 17.9%, village weaponsmith 5.6%, end city treasure 4.6%, jungle temple 4.4%, stronghold corridor 2.5%. The bolt armor trim smithing template drops from skeleton horses at 25%.
 
 ## References
 

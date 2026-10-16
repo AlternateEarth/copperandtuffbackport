@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:waxed_copper_grate_from_waxed_copper_block_stonecutting"
+      "copperandtuffbackport:waxed_copper_grate_from_waxed_copper_block_stonecutting"
     ]
   }
 }

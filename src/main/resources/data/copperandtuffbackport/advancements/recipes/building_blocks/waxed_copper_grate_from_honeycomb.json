@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:waxed_copper_grate_from_honeycomb"
+      "copperandtuffbackport:waxed_copper_grate_from_honeycomb"
     ]
   }
 }
