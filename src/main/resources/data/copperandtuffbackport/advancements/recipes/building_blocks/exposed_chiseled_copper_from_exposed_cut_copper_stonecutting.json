@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:exposed_chiseled_copper_from_exposed_cut_copper_stonecutting"
+        "recipe": "copperandtuffbackport:exposed_chiseled_copper_from_exposed_cut_copper_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:exposed_chiseled_copper_from_exposed_cut_copper_stonecutting"
+      "copperandtuffbackport:exposed_chiseled_copper_from_exposed_cut_copper_stonecutting"
     ]
   }
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:oxidized_copper_trapdoor"
+        "recipe": "copperandtuffbackport:oxidized_copper_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
